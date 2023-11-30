@@ -1,0 +1,16 @@
+.nav{
+    margin-top: 2%;
+}
+
+.navButtons{
+    width: 5em;
+    height: 2em;
+    margin: .5em;
+    border-radius: 2em;
+    font-size: large;
+}
+.languageButtons{
+    width: 3em;
+    margin: .5em;
+    border-radius: 1em;
+}
