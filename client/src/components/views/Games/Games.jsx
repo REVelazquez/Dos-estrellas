@@ -1,7 +1,19 @@
-const Games= ()=>{
+import { useEffect, useState } from "react"
+import GameSelect from "../../extras/GameSelect/GameSelect"
+import { GameDetail } from "../../extras"
+
+const Games= ({language})=>{
+
+    const [countless, setCountless]= useState(false)
+
+    const handleState= ()=>{
+       setCountless(!countless)
+    }
+
     return(
         <div>
-            <h1>Aqui van los juegos</h1>
+            <GameSelect handleState={handleState} />
+            {countless && <GameDetail language={language} />}
         </div>
     )
 }

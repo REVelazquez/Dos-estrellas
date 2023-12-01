@@ -8,9 +8,15 @@
     margin: .5em;
     border-radius: 2em;
     font-size: large;
+    background-color: rgba(255, 166, 0, 0.427);
 }
 .languageButtons{
     width: 3em;
     margin: .5em;
     border-radius: 1em;
+    background-color: rgba(255, 68, 0, 0.395);
+}
+
+.languageButtons:disabled{
+    color: rgb(77, 72, 72);
 }

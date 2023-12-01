@@ -1,8 +1,8 @@
-import caratula from "./Imagen_inicio_1.jpg"
+import caratula from "./capsula_cabezera.png"
 import logo from './logo32.png'
+import banner from './banner.png'
 
+const gamesImg= [caratula, banner]
+const company= [logo]
 
-export{
-    caratula,
-    logo
-}
+export  {gamesImg, company}

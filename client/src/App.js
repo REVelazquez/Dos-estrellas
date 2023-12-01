@@ -27,11 +27,11 @@ const App= () => {
 
       />}
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/games' element={<Games/>} />
-        <Route path='/news' element={<News/>} />
-        <Route path='/*' element={<Error/>} />
+        <Route path='/'  element={<Home language={language} />} />
+        <Route path='/contact'  element={<Contact language={language} />} />
+        <Route path='/games'  element={<Games language={language} />} />
+        <Route path='/news'  element={<News language={language} />} />
+        <Route path='/*'  element={<Error/>} />
       </Routes>
       {location.pathname !== '/error' && <Footer/>}
     </div>
