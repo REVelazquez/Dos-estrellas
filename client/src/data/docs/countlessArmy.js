@@ -6,3 +6,6 @@ export const answer= 'Be the one that send wave after waver of troops to break t
 
 export const invocaTropas = 'Selecciona e invoca tus tropas preferidas para conquistar los diversos escenarios.'
 export const summonTroops = 'Select and summon your favorites units to conquest diverse scenarios.'
+
+export const invadeMapas = 'Has tu travesia por diferentes mapas y conquistalos!'
+export const invadeMaps = 'Make your journey trough different maps and conquer them'
