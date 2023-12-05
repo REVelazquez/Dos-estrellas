@@ -1,9 +1,9 @@
-import mapa from './mapa.gif'
-import mapas from './mapas_espannol.png'
-import maps from './mapas_ingles.png'
+import mapaGif from './mapa.gif'
+import mapasEs from './mapas_espannol.png'
+import mapasEn from './mapas_ingles.png'
 
 export{
-    mapa,
-    mapas,
-    maps
+    mapaGif,
+    mapasEs,
+    mapasEn
 }
