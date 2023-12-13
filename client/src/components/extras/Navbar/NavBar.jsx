@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router"
 import Style from './Navbar.module.css'
+import { NavLink } from "react-router-dom"
+
+import { company } from "../../../data/img"
 
 const NavBar = ({language, changeLanguageEN, changeLanguageES})=>{
 
@@ -7,7 +10,9 @@ const NavBar = ({language, changeLanguageEN, changeLanguageES})=>{
 
     return(
         <nav className={Style.nav}>
-            <button className={Style.navButtons} onClick={()=>navigate('/')}>{language === 'ES' ? 'Inicio' : 'Home' }</button>
+            <NavLink to='/'>
+            <img className={Style.img} src={company[0]} alt="" />
+            </NavLink>
             <button className={Style.navButtons} onClick={()=>navigate('/News')}>{language === 'ES' ? 'Noticias': 'News'}</button>
             <button className={Style.navButtons} onClick={()=>navigate('/games')}>{language === 'ES' ? 'Juegos' : 'Games'}</button>
             <button className={Style.navButtons} onClick={()=>navigate('/contact')}>{language === 'ES' ? 'Contacto': 'Contact'}</button>

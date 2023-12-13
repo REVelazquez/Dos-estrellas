@@ -1,0 +1,1 @@
+export const mailEmpresa= 'dos.estrellas.games@gmail.com'

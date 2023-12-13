@@ -1,0 +1,51 @@
+@import url('../../../data/fonts/fonts.css');
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner{
+    height: 14em;
+    border-bottom-left-radius:5em;
+    border-bottom-right-radius: 5em;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgTittle{
+    height: 4.5em;
+}
+.containerDetails{
+    display: flex;
+    flex-direction: row;
+}
+.articles{
+    width: 15em;
+}
+.gifs{
+    height: 15em;
+    margin-left: .5em;
+}
+.texto{
+    color: whitesmoke;
+    font-family:'Seagram';
+    font-size:large;
+}
+.reqContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tittle{
+    color: rgb(255, 246, 142);
+    font-family: 'Ancient_Medium';
+    font-size:3em;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+.requisites{
+    margin-top: 0px;
+    width: 20em;
+}
