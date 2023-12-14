@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import Style from './Top.module.css'
+import { TiArrowSortedUp } from "react-icons/ti";
+
 
 const Top = ()=>{
     const [isVisible, setIsVisible]= useState(false)
@@ -32,7 +34,7 @@ const Top = ()=>{
 
     return(
         <div className={Style.scrollButton}>
-            {isVisible && <button className={Style.scrollToTop} onClick={scrollToTop}>Go top</button>}
+            {isVisible && <button className={Style.scrollToTop} onClick={scrollToTop}>{<TiArrowSortedUp size={30} />}</button>}
         </div>
     )
 }

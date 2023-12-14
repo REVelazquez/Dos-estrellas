@@ -55,3 +55,11 @@
     margin-right: .25em;
     margin-bottom: 2px;
 }
+.logos{
+    color: whitesmoke;
+    margin-left: .5em;
+    font-size: xx-large;
+}
+.logos:hover{
+    cursor: pointer;
+}
