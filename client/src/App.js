@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import { Contact, Home, Games, News, Error } from './components/views';
-import { NavBar, Footer } from './components/extras/index'
+import { NavBar, Footer, Top } from './components/extras/index'
 import { useState } from 'react';
 
 const App= () => {
@@ -33,7 +33,8 @@ const App= () => {
         <Route path='/news'  element={<News language={language} />} />
         <Route path='/*'  element={<Error/>} />
       </Routes>
-      {location.pathname !== '/error' && <Footer/>}
+      {location.pathname !== '/error' && <Top />}
+      {location.pathname !== '/error' && <Footer language={language} />}
     </div>
   );
 }

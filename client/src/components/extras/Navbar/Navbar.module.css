@@ -19,23 +19,55 @@
     background-position: center;
 } */
 .img{
-    height: 5em;
+    margin-top: .25em;
+    height: 4em;
+}
+.img:hover{
+    cursor: pointer;
 }
 .navButtons{
+    color: whitesmoke;
+    font-weight: 600;
+    margin: .5em;
+    width: 5em;
+    height: 2em;
+    font-size: large;
+    background-color: rgba(7, 7, 7);
+    border-color: none;
+    border-style: none;
+}
+.navButtons:hover{
     width: 5em;
     height: 2em;
     margin: .5em;
     border-radius: 2em;
     font-size: large;
-    background-color: rgba(255, 166, 0, 0.4);
+    background-color: rgba(255, 166, 0);
+    color: black;
+    cursor:pointer;
 }
 .languageButtons{
+    color: white;
+    font-weight: 600;
+    margin: .5em;
+    width: 3em;
+    border-style: none;
+    background-color: rgba(7, 7, 7);
+}
+.languageButtons:hover{
     width: 3em;
     margin: .5em;
     border-radius: 1em;
-    background-color: rgba(255, 68, 0, 0.395);
+    background-color: rgba(255, 68, 0);
+    cursor: pointer;
 }
 
 .languageButtons:disabled{
     color: rgb(77, 72, 72);
+    background-color: rgba(7, 7, 7);
+    cursor: default;
+}
+
+.link:hover{
+    cursor:default;
 }

@@ -1,0 +1,20 @@
+.scrollButton{
+    position: fixed;
+    bottom: 11em;
+    right: 3em;
+    z-index: 1000;
+}
+
+.scrollToTop{
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4em;
+    cursor: pointer;
+    font-size: small;
+}
+
+.scrollToTop:hover{
+    background-color: blue;
+}
