@@ -1,6 +1,6 @@
 import './App.css';
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
-import { Contact, Home, Games, News, Error } from './components/views';
+import { Contact, Home, Games, News, Error, About, NewsDetail } from './components/views';
 import { NavBar, Footer, Top } from './components/extras/index'
 import { useState } from 'react';
 
@@ -31,6 +31,8 @@ const App= () => {
         <Route path='/contact'  element={<Contact language={language} />} />
         <Route path='/games'  element={<Games language={language} />} />
         <Route path='/news'  element={<News language={language} />} />
+        <Route path='/news/:id' element={<NewsDetail language={language} />} />
+        <Route path='/about'  element={<About language={language} />} />
         <Route path='/*'  element={<Error/>} />
       </Routes>
       {location.pathname !== '/error' && <Top />}

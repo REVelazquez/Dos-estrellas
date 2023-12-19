@@ -4,12 +4,14 @@ import GameSelect from "./GameSelect/GameSelect";
 import Footer from "./Footer/Footer";
 import GameDetail from "./GameDetail/GameDetail";
 import Top from "./Top/Top";
+import NewsCards from "./NewsCards/NewsCards";
 
 export {
-    NavBar,
-    HomeCarrousel,
+    Footer,
     GameSelect,
     GameDetail,
-    Footer,
+    HomeCarrousel,
+    NavBar,
+    NewsCards,
     Top
 }
