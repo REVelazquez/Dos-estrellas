@@ -11,7 +11,7 @@ const NewsDetail = ({language})=>{
     const handleButton = ()=>{
         navigate('/news')
     }
-    console.log(selectedNew)
+
     return(
         <div style={{display:"flex", flexDirection:'column'}}>
             <button style={{width:'5em', margin:'2em'}} onClick={handleButton}>{language === 'ES' ? 'Atras' : 'Go back'}</button>

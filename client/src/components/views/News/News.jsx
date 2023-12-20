@@ -12,6 +12,8 @@ const News = ({language})=>{
         ? noticias // Si es 'default', muestra todas las noticias
         : noticias.filter((noticia) => noticia.category === filtroCategoria);
 
+    filteredNoticias.sort((a, b) => b.id - a.id);
+
     return (<div style={{ alignItems:'center'}}>
         {/* filtro u orden? */}
         <select name="order" id="" onChange={handleFiltroChange}>
@@ -21,7 +23,7 @@ const News = ({language})=>{
                 <option value='general'>{'General'}</option>
 
         </select>
-        <section style={{display:"flex", flexDirection:'column', height:'30em', alignItems:'center'}}>
+        <section style={{display:"flex", flexDirection:'row', height:'29.5em', alignItems:'center'}}>
 
         {filteredNoticias.map(({id, category, image, tittleEs, tittleEn, textEs, textEn})=>{
             return (

@@ -19,6 +19,16 @@ export const noticias=[
             "After I got him crazy with changes, ideas and other things...finally we bring to all of you the website. On it you'll find all the news of Countless Army and furute games as well a little presentation of us, our social networks and... well, all those things.",
             "We hope you like the website!"
         ]
-    }
+    },
+    {
+        id:2,
+        category:'Countless Army',
+        image:'',
+        tittleEs: 'Holi',
+        tittleEn:'Hi',
+        textEn:['How are you?','Come with me'],
+        textEs:['Como estas?', 'Ven conmigo']
+    },
+    
 ]
 

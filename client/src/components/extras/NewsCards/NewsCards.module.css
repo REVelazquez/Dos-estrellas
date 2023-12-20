@@ -1,0 +1,42 @@
+.section{
+    width:12em;
+    height:25em;
+    margin-Left:5em ;
+    border-Style:double;
+    border-Color:whitesmoke;
+    margin-Top:1em;
+    color:whitesmoke;
+    background-color: black;
+}
+
+.container{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.countlessSection{
+    width:12em;
+    height:25em;
+    margin-Left:5em ;
+    border-Style:double;
+    border-Color:whitesmoke;
+    margin-Top:1em;
+    color:whitesmoke;
+    background-color: rgb(132, 99, 175);
+}
+
+.tittle{
+    color:white;
+    margin-top: 0px;
+}
+
+.countlessTittle{
+    color:rgb(226, 185, 60);
+    margin-top: 0px;
+}
+.link{
+    color: orangered;
+}
+.countlessLink{
+    color: black;
+}
