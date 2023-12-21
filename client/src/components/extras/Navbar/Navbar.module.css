@@ -1,3 +1,4 @@
+@import url('../../../data/fonts/fonts.css');
 .nav{
     top: 0;
     position: sticky;
@@ -19,6 +20,7 @@
     align-items: center;
     place-content: center;
     margin-right: 5%;
+    font-family: 'Seagram';
 }
 .img{
     margin-top: .25em;
@@ -33,17 +35,18 @@
     margin: .5em;
     width: 6em;
     height: 2em;
-    font-size: large;
+    font-size: x-large;
     background-color: rgba(7, 7, 7);
     border-color: none;
     border-style: none;
+    font-family: 'Seagram';
 }
 .navButtons:hover{
     width: 6em;
     height: 2em;
     margin: .5em;
     border-radius: 2em;
-    font-size: large;
+    font-size: x-large;
     background-color: rgba(255, 166, 0);
     color: black;
     cursor:pointer;
@@ -55,6 +58,7 @@
     width: 3em;
     border-style: none;
     background-color: rgba(7, 7, 7);
+    font-family: 'Ancient_Medium';
 }
 .languageButtons:hover{
     width: 3em;

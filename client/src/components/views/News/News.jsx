@@ -1,6 +1,8 @@
 import { noticias } from "../../../data/docs/news"
 import { useState } from "react";
 import { NewsCards } from "../../extras"
+import Style from './News.module.css'
+
 const News = ({language})=>{
     const [filtroCategoria, setFiltroCategoria] = useState('default');
 
@@ -14,15 +16,18 @@ const News = ({language})=>{
 
     filteredNoticias.sort((a, b) => b.id - a.id);
 
-    return (<div style={{ alignItems:'center'}}>
+    return (<div className={Style.container}>
         {/* filtro u orden? */}
-        <select name="order" id="" onChange={handleFiltroChange} style={{backgroundColor:'rgba(7, 7, 7, 0.954)', color:'whitesmoke'}}>
+        <section className={Style.filterContainer}>
+        <h3 className={Style.filterText}>{language === 'ES' ? 'Filtro: ' : 'Filter: '}</h3>
+        <select name="order" id="" onChange={handleFiltroChange} className={Style.select}>
 
                 <option value='default'>{'All'}</option>
                 <option value='Countless Army'>{'Countless Army'}</option>
                 <option value='general'>{'General'}</option>
 
         </select>
+        </section>
         <section style={{display:"flex", flexDirection:'row', height:'29.5em', alignItems:'center'}}>
 
         {filteredNoticias.map(({id, category, image, tittleEs, tittleEn, textEs, textEn})=>{

@@ -31,32 +31,38 @@
     color:white;
     margin-top: 0px;
     font-family: 'OldeEnglish';
-    font-size: large;
+    font-size: x-large;
+    font-weight: 200;
 }
 
 .countlessTittle{
     color:yellow;
     font-family: "OldeEnglish";
-    font-size: large;
+    font-size: x-large;
     margin-top: 0px;
+    font-weight: 200;
 }
 
 .text{
     font-family: 'Ancient_Medium';
     font-size: medium;
+    font-weight:lighter;
 }
 .countlessText{
     font-family: 'Ancient_medium';
     font-size: medium;
+    font-weight: lighter;
 }
 
 .link{
     color: orangered;
     font-family: 'Seagram';
     font-size: small;
+    font-weight: lighter;
 }
 .countlessLink{
     color: black;
     font-family: 'Seagram';
     font-size: small;
+    font-weight: lighter;
 }
