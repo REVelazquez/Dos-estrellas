@@ -9,3 +9,8 @@
     font-family: 'Seagram';
     src: url('./Seagram\ tfb.ttf');
 }
+
+@font-face {
+    font-family: 'OldeEnglish';
+    src: url('./OldeEnglish.ttf');
+}

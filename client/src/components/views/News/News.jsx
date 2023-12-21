@@ -16,7 +16,7 @@ const News = ({language})=>{
 
     return (<div style={{ alignItems:'center'}}>
         {/* filtro u orden? */}
-        <select name="order" id="" onChange={handleFiltroChange}>
+        <select name="order" id="" onChange={handleFiltroChange} style={{backgroundColor:'rgba(7, 7, 7, 0.954)', color:'whitesmoke'}}>
 
                 <option value='default'>{'All'}</option>
                 <option value='Countless Army'>{'Countless Army'}</option>

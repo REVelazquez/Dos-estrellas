@@ -1,4 +1,4 @@
-import { company } from "../img"
+import { company, errorPage } from "../img"
 
 export const noticias=[
     {   
@@ -23,7 +23,7 @@ export const noticias=[
     {
         id:2,
         category:'Countless Army',
-        image:'',
+        image:errorPage,
         tittleEs: 'Holi',
         tittleEn:'Hi',
         textEn:['How are you?','Come with me'],
