@@ -3,7 +3,7 @@ import { company, errorPage } from "../img"
 export const noticias=[
     {   
         id:1,
-        category:'general',
+        category:'General',
         image:company[0],
         tittleEs:'¡Tenemos página web!',
         textEs:[
@@ -29,6 +29,51 @@ export const noticias=[
         textEn:['How are you?','Come with me'],
         textEs:['Como estas?', 'Ven conmigo']
     },
+    // {
+    //     id:3,
+    //     category:'Countless Army',
+    //     image:errorPage,
+    //     tittleEs: 'Holi',
+    //     tittleEn:'Hi',
+    //     textEn:['How are you?','Come with me'],
+    //     textEs:['Como estas?', 'Ven conmigo']
+    // },
+    // {
+    //     id:4,
+    //     category:'Countless Army',
+    //     image:errorPage,
+    //     tittleEs: 'Holi',
+    //     tittleEn:'Hi',
+    //     textEn:['How are you?','Come with me'],
+    //     textEs:['Como estas?', 'Ven conmigo']
+    // },
+    // {
+    //     id:5,
+    //     category:'Countless Army',
+    //     image:errorPage,
+    //     tittleEs: 'Holi',
+    //     tittleEn:'Hi',
+    //     textEn:['How are you?','Come with me'],
+    //     textEs:['Como estas?', 'Ven conmigo']
+    // },
+    // {
+    //     id:6,
+    //     category:'Countless Army',
+    //     image:errorPage,
+    //     tittleEs: 'Holi',
+    //     tittleEn:'Hi',
+    //     textEn:['How are you?','Come with me'],
+    //     textEs:['Como estas?', 'Ven conmigo']
+    // },
+    // {
+    //     id:7,
+    //     category:'Countless Army',
+    //     image:errorPage,
+    //     tittleEs: 'Holi',
+    //     tittleEn:'Hi',
+    //     textEn:['How are you?','Come with me'],
+    //     textEs:['Como estas?', 'Ven conmigo']
+    // },
     
 ]
 

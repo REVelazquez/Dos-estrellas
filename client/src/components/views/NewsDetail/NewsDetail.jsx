@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router"
 import { noticias } from "../../../data/docs/news"
-
+import Style from './NewsDetail.module.css'
 
 
 const NewsDetail = ({language})=>{
@@ -14,11 +14,11 @@ const NewsDetail = ({language})=>{
 
     return(
         <div style={{display:"flex", flexDirection:'column'}}>
-            <button style={{width:'5em', margin:'2em'}} onClick={handleButton}>{language === 'ES' ? 'Atras' : 'Go back'}</button>
-            <section style={{width:'35em', marginLeft:'31em', color:'whitesmoke'}}>
-                <img style={{height:'10em'}} src={selectedNew.image} />
-                {language === 'ES' ? <h1>{selectedNew.tittleEs}</h1> : <h1>{selectedNew.tittleEn}</h1>}
-                {language === 'ES' ? selectedNew.textEs.map(parrafo=><p>{parrafo}</p>) : selectedNew.textEn.map(parrafo=><p>{parrafo}</p>)}
+            <button className={Style.button} onClick={handleButton}>{language === 'ES' ? 'Atras' : 'Go back'}</button>
+            <section className={Style.section} style={{color:'whitesmoke'}}>
+                <img className={Style.img} src={selectedNew.image} />
+                {language === 'ES' ? <h1 className={Style.tittle} >{selectedNew.tittleEs}</h1> : <h1 className={Style.tittle} >{selectedNew.tittleEn}</h1>}
+                {language === 'ES' ? selectedNew.textEs.map(parrafo=><p className={Style.text}>{parrafo}</p>) : selectedNew.textEn.map(parrafo=><p>{parrafo}</p>)}
             </section>
         </div>
     )

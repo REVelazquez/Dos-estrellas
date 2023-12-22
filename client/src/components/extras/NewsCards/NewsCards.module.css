@@ -10,13 +10,33 @@
     color:whitesmoke;
     background-color: black;
 }
+.img{
+    height: 8em;
+    size: cover;
+    margin: .5em;
+}
+
+.category{
+    color: white;
+    font-size: x-small;
+}
+.catBut{
+    color: white;
+    font-size: x-small;
+    background-color: black;
+    border-color: none;
+    border-style: none;
+}
+.catBut:hover{
+    cursor: pointer;
+}
 
 .container{
     margin-top: 2em;
     margin-bottom: 2em;
 }
 
-.countlessSection{
+/* .countlessSection{
     width:12em;
     height:25em;
     margin-Left:5em ;
@@ -25,7 +45,7 @@
     margin-Top:1em;
     color:whitesmoke;
     background-color:purple;
-}
+} */
 
 .tittle{
     color:white;
@@ -35,24 +55,24 @@
     font-weight: 200;
 }
 
-.countlessTittle{
+/* .countlessTittle{
     color:yellow;
     font-family: "OldeEnglish";
     font-size: x-large;
     margin-top: 0px;
     font-weight: 200;
-}
+} */
 
 .text{
     font-family: 'Ancient_Medium';
     font-size: medium;
     font-weight:lighter;
 }
-.countlessText{
+/* .countlessText{
     font-family: 'Ancient_medium';
     font-size: medium;
     font-weight: lighter;
-}
+} */
 
 .link{
     color: orangered;
@@ -60,9 +80,9 @@
     font-size: small;
     font-weight: lighter;
 }
-.countlessLink{
+/* .countlessLink{
     color: black;
     font-family: 'Seagram';
     font-size: small;
     font-weight: lighter;
-}
+} */

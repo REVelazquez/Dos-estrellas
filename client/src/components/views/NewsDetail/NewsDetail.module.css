@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.button{
+    width: 5em;
+    height: 2em;
+    margin: 2em;
+    background-color: rgba(17, 17, 17, 0);
+    border-style: none;
+    color: antiquewhite;
+    font-size: medium;
+    z-index: 1000;
+    position: fixed;
+    font-weight: 700;
+    border-radius: 3em;
+}
+.button:hover{
+    background-color: orange;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+
+.section{
+    width: 30%;
+    align-items: center;
+    margin-left: 35%;
+}
+
+.img{
+    height: 10em;
+}
+.tittle{
+    font-size: x-large;
+}
+.text{
+    font-size: medium;
+}   

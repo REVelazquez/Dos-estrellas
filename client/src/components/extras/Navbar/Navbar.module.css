@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     place-content: center;
-    margin-left: 32%;
+    margin-left: 25.7%;
 }
 .langButtons{
     display: flex;
@@ -58,7 +58,7 @@
     width: 3em;
     border-style: none;
     background-color: rgba(7, 7, 7);
-    font-family: 'Ancient_Medium';
+    font-family: 'Seagram';
 }
 .languageButtons:hover{
     width: 3em;

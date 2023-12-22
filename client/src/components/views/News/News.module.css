@@ -22,3 +22,10 @@
     font-size: small;
     font-family: 'Seagram';
 }
+.newsContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    align-items: center;
+    min-height: 27em;
+    margin-bottom: 1em;
+}
