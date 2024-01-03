@@ -1,16 +1,20 @@
 
+@font-face {
+    font-family: 'Lora';
+    src: url('./Lora-VariableFont_wght.ttf');
+}
+
 
 @font-face {
-    font-family: 'Ancient_Medium';
-    src: url('./Ancient\ Medium.ttf');
+    font-family: 'Roboto';
+    src: url('./Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Alkatra';
+    src: url('./Alkatra-VariableFont_wght.ttf');
 }
 
 @font-face {
-    font-family: 'Seagram';
-    src: url('./Seagram\ tfb.ttf');
-}
-
-@font-face {
-    font-family: 'OldeEnglish';
-    src: url('./OldeEnglish.ttf');
+    font-family: 'Merriweather';
+    src: url('./Merriweather-Regular.ttf');
 }

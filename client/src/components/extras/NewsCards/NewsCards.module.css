@@ -50,8 +50,8 @@
 .tittle{
     color:white;
     margin-top: 0px;
-    font-family: 'OldeEnglish';
-    font-size: x-large;
+    font-family: 'Alkatra';
+    font-size: large;
     font-weight: 200;
 }
 
@@ -64,8 +64,8 @@
 } */
 
 .text{
-    font-family: 'Ancient_Medium';
-    font-size: medium;
+    font-family: 'Lora';
+    font-size: smaller;
     font-weight:lighter;
 }
 /* .countlessText{
@@ -76,8 +76,8 @@
 
 .link{
     color: orangered;
-    font-family: 'Seagram';
-    font-size: small;
+    font-family: 'Roboto';
+    font-size: x-small;
     font-weight: lighter;
 }
 /* .countlessLink{

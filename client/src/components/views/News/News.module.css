@@ -13,14 +13,14 @@
     color: white;
     margin-right: 5px;
     font-size: small;
-    font-family: 'Seagram';
+    font-family: 'Alkatra';
     font-weight: 300;
 }
 .select{
     background-color: rgb(7, 7, 7);
     color: whitesmoke;
     font-size: small;
-    font-family: 'Seagram';
+    font-family: 'Alkatra';
 }
 .newsContainer{
     display: grid;

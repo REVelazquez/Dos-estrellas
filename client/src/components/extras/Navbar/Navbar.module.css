@@ -20,7 +20,7 @@
     align-items: center;
     place-content: center;
     margin-right: 5%;
-    font-family: 'Seagram';
+    font-family: 'Lora_variable';
 }
 .img{
     margin-top: .25em;
@@ -39,7 +39,7 @@
     background-color: rgba(7, 7, 7);
     border-color: none;
     border-style: none;
-    font-family: 'Seagram';
+    font-family: 'Alkatra';
 }
 .navButtons:hover{
     width: 6em;
@@ -58,7 +58,7 @@
     width: 3em;
     border-style: none;
     background-color: rgba(7, 7, 7);
-    font-family: 'Seagram';
+    font-family: 'Lora_variable';
 }
 .languageButtons:hover{
     width: 3em;
