@@ -1,7 +1,4 @@
 export const mailEmpresa= 'dos.estrellas.games@gmail.com'
 
-export const presentacion=['Tienes alguna duda','Contactanos!']
-export const presentation=['You have a doubt?', 'Contact us!']
-
-export const sociales='También puedes visitar nustras redes sociales:'
-export const socials= 'Also you can visit our social networks: '
+export const presentacion=['Tienes alguna duda? ','Contactanos!', 'Envianos un mensaje', 'También puedes contactarnos con nuestro email:']
+export const presentation=['You have a doubt?', 'Contact us!', 'Send us a message', 'Also you can contact us with our email']

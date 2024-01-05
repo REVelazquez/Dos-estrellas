@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { Validation } from "./Validation"
 
-const Form = ({language})=>{
+const Form = ({language, handleMessage})=>{
 
     const [gameRelated, setGameRelated]= useState(false)
     const [disable, setDisable]=useState(true)
     const [selectedGame, setSelectedGame]=useState('')
+    const [selectedCategory, setSelectedCategory]=useState('')
 
     const [inputs, setInputs]=useState({
         email:'',
@@ -19,33 +20,22 @@ const Form = ({language})=>{
         message:''
     })
 
-    const selection= (value)=>{
-        if (value === 'Problemas con un juego' || value === 'Se encontro un bug'){
-            setGameRelated(true)
-        }else{
-            setGameRelated(false)
-        }
-    }
+
 
     const handleSelect1= (event)=>{
         const selectedValue=event.target.value
-        selection(selectedValue)
-
-        setInputs({
-            ...inputs,
-            tittle: selectedValue !== 'None' ? selectedValue : ''
-        })
+        setSelectedCategory(selectedValue)
+        if (selectedValue !== 'None' && selectedValue!== 'Contacto comercial'){
+            setGameRelated(true)
+        }else{
+            setGameRelated(false)
+            setSelectedGame('')
+        }
     }
 
     const handleSelect2= (event)=>{
         const selectedGameValue = event.target.value;
         setSelectedGame(selectedGameValue);
-        setInputs({
-            ...inputs,
-            tittle: `${selectedGameValue !== 'None' ? selectedGameValue + ' - ' : ''}${inputs.tittle}`,
-        });
-
-        setDisable(!(inputs.email && inputs.message && inputs.tittle));
 
     }
     
@@ -65,7 +55,13 @@ const Form = ({language})=>{
     };
 
     const handleSubmit = (event)=>{
+        event.preventDefault();
         try {
+            const finalTitle = selectedGame ? `${selectedCategory} - ${selectedGame}: ${inputs.tittle}` : `${selectedCategory} - ${inputs.tittle}`;
+            setInputs({
+                ...inputs,
+                tittle:finalTitle
+            })
             if(error.email || error.message || error.tittle){
                 if(language === 'ES'){
                     alert('Tienes algo equivocado')
@@ -73,14 +69,15 @@ const Form = ({language})=>{
                     alert('You have something wrong')
                 }
             }
+            handleMessage()
         } catch (error) {
             console.error('Error en la solicitud', error)
         }
-        event.preventDefault();
+        console.log(inputs)
     }
 
     return(
-        <form onSubmit={handleSubmit} style={{color:'white', display:"flex", flexDirection:'column', width:'20em', marginLeft:'39.5%'}}>
+        <form onSubmit={handleSubmit} style={{color:'white', display:"flex", flexDirection:'column', width:'20em'}}>
             <label htmlFor="Email">Email</label>
             <input onChange={handleOnChange} type="text" name='email' value={inputs.autor} />
             <p>{error.email}</p>

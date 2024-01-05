@@ -82,7 +82,7 @@ export const Validation=(inputs, language)=>{
         default:
             errors.message=''
     }
-/* texto = 500 caracteres */
+
     return errors
     
 }
