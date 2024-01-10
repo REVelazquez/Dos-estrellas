@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    min-height: 30.5em;
+}
+
+.containerPresent{
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation1{
+    font-size: medium;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.presentation2{
+    font-size: medium;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.formButton{
+    background: none;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    height: fit-content;
+}
+.formButton:hover{
+    cursor: pointer;
+}
+
+.presentation3{
+    color: white;
+    margin-bottom: 2px;
+}
+
+.email{
+    color: white;
+    text-decoration: none;
+}

@@ -6,6 +6,7 @@ import Form from "./Form/Form";
 import GameDetail from "./GameDetail/GameDetail";
 import Top from "./Top/Top";
 import NewsCards from "./NewsCards/NewsCards";
+import NewsCarrousel from "./NewsCarrousel/NewsCarrousel";
 
 export {
     Footer,
@@ -15,5 +16,6 @@ export {
     HomeCarrousel,
     NavBar,
     NewsCards,
+    NewsCarrousel,
     Top
 }

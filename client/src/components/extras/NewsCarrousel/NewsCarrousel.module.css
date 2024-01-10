@@ -1,0 +1,42 @@
+@import url('../../../data/fonts/fonts.css');
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30em;
+}
+
+.imgAndNew{
+    display: flex;
+    flex-direction: row;
+}
+
+.img{
+    width: 10em;
+}
+.textContainer{
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+}
+
+.tittle{
+    color: white;
+    font-family: 'Alkatra';
+    font-size: larger;
+    margin: 5px;
+}
+
+.text{
+    color: white;
+    font: 'Merriweather';
+    font-weight: bold;
+    font-size: medium;
+    margin: 2px;
+}
+
+.link{
+    font: 'Roboto';
+    color: orangered;
+    font-size: small;
+}

@@ -6,12 +6,6 @@ const NewsCards = ({language, id, category, image, tittleEs, tittleEn, textEs, t
     let tittleClass= Style.tittle
     let textClass= Style.text
     let linkClass= Style.link
-    // if (category === 'Countless Army'){
-    //     selectionClass= Style.countlessSection
-    //     tittleClass= Style.countlessTittle
-    //     textClass=Style.countlessText
-    //     linkClass=Style.countlessLink
-    // }
     
     return(
         <section className={selectionClass}>

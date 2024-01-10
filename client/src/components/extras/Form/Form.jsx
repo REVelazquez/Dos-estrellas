@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Validation } from "./Validation"
+import Style from './Form.module.css'
 
 const Form = ({language, handleMessage})=>{
 
@@ -73,40 +74,39 @@ const Form = ({language, handleMessage})=>{
         } catch (error) {
             console.error('Error en la solicitud', error)
         }
-        console.log(inputs)
     }
 
     return(
-        <form onSubmit={handleSubmit} style={{color:'white', display:"flex", flexDirection:'column', width:'20em'}}>
-            <label htmlFor="Email">Email</label>
-            <input onChange={handleOnChange} type="text" name='email' value={inputs.autor} />
-            <p>{error.email}</p>
-            <section>
-                <label htmlFor="">{language === 'ES' ? 'Categoria':'Category'}</label>
-                <select name="Categorias" id="CatSelect" onChange={handleSelect1}>
+        <form onSubmit={handleSubmit} className={Style.form} >
+            <label className={Style.labels} htmlFor="Email">Email</label>
+            <input className={Style.inputs} onChange={handleOnChange} type="text" name='email' value={inputs.autor} />
+            <p className={Style.errors}>{error.email}</p>
+            <div className={Style.selectCont}>
+                <label className={Style.labels} htmlFor="">{language === 'ES' ? 'Categoria':'Category'}</label>
+                <select className={Style.select} name="Categorias" id="CatSelect" onChange={handleSelect1}>
                         <option value="None"> - - - </option>
-                        <option value="Problemas con un juego">Problemas con un juego</option>
-                        <option value="Se encontro un bug">Encontre un bug</option>
-                        <option value="Contacto comercial">Contacto comercial</option>
+                        <option value="Problemas con un juego">{language === 'ES' ? 'Problemas con un juego' : 'Problems with a game' } </option>
+                        <option value="Se encontro un bug">{language === 'ES' ? 'Encontre un bug' : 'I find a bug' }</option>
+                        <option value="Contacto comercial">{language === 'ES' ? 'Contacto comercial' : 'Business contact' }</option>
                 </select>
                 {gameRelated && 
                     <section>
-                        <label htmlFor="Juego">Juego</label>
-                        <select onChange={handleSelect2} name="Select2" id="GameSelect">
+                        <label className={Style.labels} htmlFor="Juego">{language === 'ES' ? 'Juego' : 'Game' }</label>
+                        <select className={Style.select} onChange={handleSelect2} name="Select2" id="GameSelect">
                             <option value="">- - -</option>
                             <option value="Countless Army">Countless Army</option>
                         </select>
                 </section>
                 }
-            </section>
-            <label htmlFor="Titulo">Asunto</label>
-            <input onChange={handleOnChange} type="text" value={inputs.tittle} name='tittle' />
-            <p>{error.tittle}</p>
-            <label htmlFor="Mensaje">Mensaje:</label>
-            <textarea onChange={handleOnChange} name="message" value={inputs.message} id="" cols="30" rows="10"></textarea>
-            <p>{inputs.message.length}/500</p>
-            <p>{error.message}</p>
-            <button type="submit" disabled={disable} style={{width:'fit-content'}} > Enviar </button>
+            </div>
+            <label className={Style.labels} htmlFor="Titulo">{language === 'ES' ?'Asunto': 'Subject'}</label>
+            <input className={Style.inputs} onChange={handleOnChange} type="text" value={inputs.tittle} name='tittle' />
+            <p className={Style.errors}>{error.tittle}</p>
+            <label className={Style.labels} htmlFor="Mensaje">{language === 'ES' ?'Mensaje':'Message'}</label>
+            <textarea className={Style.textArea} onChange={handleOnChange} name="message" value={inputs.message} id="" cols="30" rows="10"></textarea>
+            <p className={Style.psTA}>{inputs.message.length}/500 <p className={Style.errors}>{error.message}</p></p>
+            
+            <button type="submit" disabled={disable} className={Style.button} > Enviar </button>
         </form>
     )
 }

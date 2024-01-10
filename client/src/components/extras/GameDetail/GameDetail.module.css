@@ -30,8 +30,8 @@
 }
 .texto{
     color: whitesmoke;
-    font-family:'Seagram';
-    font-size:large;
+    font-family:'Lora';
+    font-size:medium;
 }
 .reqContainer{
     display: flex;
@@ -40,12 +40,14 @@
 }
 .tittle{
     color: rgb(255, 246, 142);
-    font-family: 'Ancient_Medium';
+    font-family: 'Alkatra';
     font-size:3em;
     font-weight: 100;
     margin-bottom: 0px;
+    margin-top: 2em;
+
 }
 .requisites{
-    margin-top: 0px;
+    margin-top: 5px;
     width: 20em;
 }
