@@ -8,7 +8,7 @@ const NewsCarrousel = ({ language }) => {
     
     const [currentNew, setCurrentNew]=useState(0)
     const [timeElapsed, setTimeElapsed]=useState(0)
-
+// Botones
     const handleNext= ()=>{
         let futureNew= 0
         if (currentNew !== lastNews.length-1){
@@ -17,6 +17,7 @@ const NewsCarrousel = ({ language }) => {
         }else if (currentNew === lastNews.length-1){
             setCurrentNew(0)
         }
+        resetTimer()
     }
 
     const handlePrev= ()=>{
@@ -28,55 +29,68 @@ const NewsCarrousel = ({ language }) => {
             pastNew=lastNews.length-1
             setCurrentNew(pastNew)
         }
+        resetTimer()
     }
 
     const handleUnique= (index)=>{
         setCurrentNew(index)
+        resetTimer()
     }
+// Cambio de noticia + animacion de barra
+useEffect(() => {
+    let interval = setInterval(() => {
+        setCurrentNew((prev) => (prev !== lastNews.length - 1 ? prev + 1 : 0));
+        setTimeElapsed(0);
+    }, 10000);
+        
+    return () => clearInterval(interval);
+}, [lastNews.length, currentNew]);
 
-    useEffect(()=>{
-        let interval=setInterval(()=>{
-            setCurrentNew((prev) => (prev !== lastNews.length - 1 ? prev + 1 : 0));
-            setTimeElapsed(0)
-        }, 10000)
-            
-        return()=>clearInterval(interval)
-    }, [lastNews.length])
+useEffect(() => {
+    const timer = setTimeout(() => {
+        setTimeElapsed((prev) => prev + 1000);
+    }, 1000);
+    return () => clearTimeout(timer);
+}, [timeElapsed]);
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setTimeElapsed((prev) => prev + 1000);
-        }, 1000);
-        return () => clearTimeout(timer);
-    }, [timeElapsed]);
-
+const resetTimer = () => {
+    setTimeElapsed(0);
+}
+    //Animación de la barra
     const progressBarWidth = (timeElapsed / 10000) * 100 ;
 
+    let progressBarClass = Style.progressBarSmall;
+
+    if (progressBarWidth > 50) {
+        progressBarClass = Style.progressBarMedium;
+    }
+    if (progressBarWidth < 100) {
+        progressBarClass = Style.progressBarAnimate;
+    }
+
     return (
-        <section>
-            {noticias[currentNew] &&<div className={Style.container} key={noticias[currentNew].id}>
-                <div className={Style.imgAndNew}>
-                <img className={Style.img} src={noticias[currentNew].image} alt={language === 'ES' ? noticias[currentNew].tittleEs : noticias[currentNew].tittleEn} />
-                    <div className={Style.textContainer}>
-                        <h3 className={Style.tittle}>{language === 'ES' ? noticias[currentNew].tittleEs : noticias[currentNew].tittleEn}</h3>
-                        <p className={Style.text}>{language === 'ES' ? noticias[currentNew].textEs[0] : noticias[currentNew].textEn[0]}</p>
-                        <NavLink className={Style.link} to={`/news/${noticias[currentNew].id}`}><p>{language === 'ES' ? 'Ver más...' : 'See more..'}</p></NavLink>
+        <section className={Style.wrapper}>
+            {lastNews.length > 1 && <button onClick={handlePrev}>{'<'}</button>}
+            {noticias[currentNew] &&
+                <div className={Style.container} key={noticias[currentNew].id}>
+                    <div className={Style.imgAndNew}>
+                        <img className={Style.img} src={noticias[currentNew].image} alt={language === 'ES' ? noticias[currentNew].tittleEs : noticias[currentNew].tittleEn} />
+                        <div className={Style.textContainer}>
+                            <h3 className={Style.tittle}>{language === 'ES' ? noticias[currentNew].tittleEs : noticias[currentNew].tittleEn}</h3>
+                            <p className={Style.text}>{language === 'ES' ? noticias[currentNew].textEs[0] : noticias[currentNew].textEn[0]}</p>
+                            <NavLink className={Style.link} to={`/news/${noticias[currentNew].id}`}><p>{language === 'ES' ? 'Ver más...' : 'See more..'}</p></NavLink>
+                        </div>
                     </div>
-                </div>
-                    <div style={{ width: '50%', height: '5px', backgroundColor: '#ccc' }}>
-                    <div
-                    style={{
-                        width: `${progressBarWidth}%`,
-                        height: '100%',
-                        backgroundColor: 'blue',
-                    }}
-                    ></div>
-            </div>
+                <div className={Style.progressBarContainer}>
+                        <div className={progressBarClass}></div>
+                    </div>
+                    <section>
+                    {lastNews.map((newItem, index)=><button onClick={()=>handleUnique(index)} key={index}>{'•'}</button>)}
+                    </section>
                 </div>
             }
-            {lastNews.length > 1 && <button onClick={handlePrev}>{'<'}</button>}
-            {lastNews.map((newItem, index)=><button onClick={()=>handleUnique(index)} key={index}>{'•'}</button>)}
             {lastNews.length > 1 && <button onClick={handleNext}>{'>'}</button>}
+
         </section>
     );
 };

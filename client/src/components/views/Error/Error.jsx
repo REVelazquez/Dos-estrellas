@@ -3,8 +3,8 @@ import { errorPage } from "../../../data/img"
 const Error = ()=>{
     const navigate =useNavigate()
     return (
-        <div style={{minHeight:'30em'}}>
-            <img src={errorPage} alt="" />
+        <div style={{minHeight:'31em'}}>
+            <img style={{marginTop:'5em'}} src={errorPage} alt="" />
             <h1 style={{color:'yellow'}}>U shouldn't be here</h1>
             <button onClick={()=>navigate('/')} >Go Home</button>
         </div>
