@@ -5,9 +5,9 @@ const Home = ({language})=>{
 
     return(
         <div className={Style.container}>
-            <h1>Our games</h1>
+            <h2 className={Style.tittle}>{language === 'ES' ? 'Nuestros juegos' : 'Our games'}</h2>
 
-            <h2>{language === 'ES' ? 'Ultimas noticias' : 'Last news'}</h2>
+            <h2 className={Style.tittle}>{language === 'ES' ? 'Ultimas noticias' : 'Latest news'}</h2>
             <NewsCarrousel language={language} />
         </div>
     )

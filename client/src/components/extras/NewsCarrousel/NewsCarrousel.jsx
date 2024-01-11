@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { noticias } from '../../../data/docs/news';
 import { NavLink } from 'react-router-dom';
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import Style from './NewsCarrousel.module.css'
 
 const NewsCarrousel = ({ language }) => {
@@ -8,6 +9,7 @@ const NewsCarrousel = ({ language }) => {
     
     const [currentNew, setCurrentNew]=useState(0)
     const [timeElapsed, setTimeElapsed]=useState(0)
+
 // Botones
     const handleNext= ()=>{
         let futureNew= 0
@@ -35,6 +37,7 @@ const NewsCarrousel = ({ language }) => {
     const handleUnique= (index)=>{
         setCurrentNew(index)
         resetTimer()
+
     }
 // Cambio de noticia + animacion de barra
 useEffect(() => {
@@ -68,9 +71,10 @@ const resetTimer = () => {
         progressBarClass = Style.progressBarAnimate;
     }
 
+
     return (
         <section className={Style.wrapper}>
-            {lastNews.length > 1 && <button onClick={handlePrev}>{'<'}</button>}
+            {lastNews.length > 1 && <button className={Style.button} onClick={handlePrev}><IoIosArrowBack /></button>}
             {noticias[currentNew] &&
                 <div className={Style.container} key={noticias[currentNew].id}>
                     <div className={Style.imgAndNew}>
@@ -85,11 +89,11 @@ const resetTimer = () => {
                         <div className={progressBarClass}></div>
                     </div>
                     <section>
-                    {lastNews.map((newItem, index)=><button onClick={()=>handleUnique(index)} key={index}>{'•'}</button>)}
+                    {lastNews.map((newItem, index)=><button disabled={currentNew===index} className={Style.pointButton} onClick={()=>handleUnique(index)} key={index}>{'•'}</button>)}
                     </section>
                 </div>
             }
-            {lastNews.length > 1 && <button onClick={handleNext}>{'>'}</button>}
+            {lastNews.length > 1 && <button className={Style.button} onClick={handleNext}><IoIosArrowForward/></button>}
 
         </section>
     );

@@ -2,9 +2,11 @@
 .container{
     display: flex;
     flex-direction: column;
+    min-height: 31em;
+    align-items: center;
 }
 .button{
-    width: 5em;
+    width: fit-content;
     height: 2em;
     margin: 2em;
     background-color: rgba(17, 17, 17, 0);
@@ -15,6 +17,7 @@
     position: fixed;
     font-weight: 700;
     border-radius: 3em;
+    left: 1em;
 }
 .button:hover{
     background-color: orange;
@@ -26,7 +29,8 @@
 .section{
     width: 30%;
     align-items: center;
-    margin-left: 35%;
+    color: whitesmoke;
+    margin-top: 2em;
 }
 
 .img{

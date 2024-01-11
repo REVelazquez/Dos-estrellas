@@ -68,3 +68,38 @@
         width: 100%; /* Se completa hasta el 100% */
     }
 }
+
+.button{
+    background: None;
+    border-style: none;
+    font-size: xx-large;
+    width: 1em;
+    height: 1em;
+    color: white;
+    margin: auto;
+    justify-content: center;
+    border-radius: 2em;
+    text-align: center
+}
+
+.button:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+.pointButton{
+    background: none;
+    border-style: none;
+    color: white;
+    font-size: xx-large;;
+    border-radius: .5em;
+}
+.pointButton:hover{
+    cursor: pointer;
+    color: #ff4500;
+}
+
+.pointButton:disabled{
+    color: gray;
+    cursor: auto;
+}
