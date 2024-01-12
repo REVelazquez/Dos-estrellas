@@ -1,6 +1,6 @@
 import {useState } from "react"
 // import GameSelect from "../../extras/GameSelect/GameSelect"
-import { GameDetail } from "../../extras"
+import { DetailCountless } from "../../extras"
 
 const Games= ({language})=>{
 
@@ -13,7 +13,7 @@ const Games= ({language})=>{
     return(
         <div>
             {/* <GameSelect handleState={handleState} /> */}
-            {countless && <GameDetail language={language} />}
+            {countless && <DetailCountless language={language} />}
         </div>
     )
 }

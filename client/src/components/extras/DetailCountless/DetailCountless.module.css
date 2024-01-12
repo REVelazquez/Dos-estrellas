@@ -44,8 +44,16 @@
     font-size:3em;
     font-weight: 100;
     margin-bottom: 0px;
-    margin-top: 2em;
+    margin-top: 0.5em;
 
+}
+.tittleReq{
+    color: rgb(255, 246, 142);
+    font-family: 'Alkatra';
+    font-size:3em;
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top: 2em;
 }
 .requisites{
     margin-top: 5px;

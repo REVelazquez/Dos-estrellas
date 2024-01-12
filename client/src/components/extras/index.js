@@ -3,16 +3,16 @@ import HomeCarrousel from "./HomeCarrousel/HomeCarrousel";
 import GameSelect from "./GameSelect/GameSelect";
 import Footer from "./Footer/Footer";
 import Form from "./Form/Form";
-import GameDetail from "./GameDetail/GameDetail";
+import DetailCountless from "./DetailCountless/DetailCountless";
 import Top from "./Top/Top";
 import NewsCards from "./NewsCards/NewsCards";
 import NewsCarrousel from "./NewsCarrousel/NewsCarrousel";
 
 export {
+    DetailCountless,
     Footer,
     Form,
     GameSelect,
-    GameDetail,
     HomeCarrousel,
     NavBar,
     NewsCards,
