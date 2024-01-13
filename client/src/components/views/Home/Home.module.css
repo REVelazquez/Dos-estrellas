@@ -1,4 +1,6 @@
 @import url('../../../data/fonts/fonts.css');
+
+/* esto es para screens de 1600 x 900, tengo que acomodar para la mia */
 .container{
     display: flex;
     flex-direction: column;

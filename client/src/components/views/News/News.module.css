@@ -1,6 +1,8 @@
 @import url('../../../data/fonts/fonts.css');
+/* pantalla de 1600 * 900 */
 .container{
     align-items: center;
+    min-height: 75vh;
 }
 .filterContainer{
     display: flex;
