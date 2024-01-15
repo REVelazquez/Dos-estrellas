@@ -1,6 +1,12 @@
 .container{
-    width: 30em;
     display: flex;
     flex-direction: column;
     color: white;
+    align-items: center;
+    align-content: center;
+    place-content: center;
+}
+
+.presentation{
+    
 }
