@@ -1,12 +1,17 @@
+@import url('../../../data/fonts/fonts.css');
+
 .container{
     display: flex;
     flex-direction: column;
-    color: white;
     align-items: center;
     align-content: center;
     place-content: center;
+    min-height: 78vh;
 }
 
 .presentation{
-    
+    color: white;
+    width: 30em;
+    font-size: x-large;
+    font-family: 'Lora';
 }

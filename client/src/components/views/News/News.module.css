@@ -1,8 +1,10 @@
 @import url('../../../data/fonts/fonts.css');
-/* pantalla de 1600 * 900 */
+/* pantalla de 1900 * 1080 */
 .container{
     align-items: center;
-    min-height: 75vh;
+    min-height: 78vh;
+    place-content: center;
+    align-items: center;
 }
 .filterContainer{
     display: flex;
@@ -28,6 +30,7 @@
     display: grid;
     grid-template-columns: repeat(5, 300px);
     align-items: center;
+    place-content: center;
     min-height: 27em;
     margin-bottom: 1em;
 }

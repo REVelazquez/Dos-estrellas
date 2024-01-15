@@ -1,0 +1,31 @@
+@import url('../../../data/fonts/fonts.css');
+
+.container{
+    min-height: 78vh;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 20em;
+}
+
+.text{
+    color: yellow;
+    font-family: 'Roboto';
+}
+
+.button{
+    background: none;
+    border-style: none;
+    color: white;
+    font-family: 'Alkatra';
+    border-radius: 3em;
+}
+
+.button:hover{
+    background-color: orangered;
+    color: black;
+}
