@@ -12,9 +12,10 @@
 }
 .buttons{
     display: flex;
+    flex-direction: row;
     align-items: center;
     place-content: center;
-
+    margin-left: 5%;
 }
 .langButtons{
     display: flex;

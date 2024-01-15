@@ -2,6 +2,8 @@
 .wrapper{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    place-content: center;
 }
 .container{
     display: flex;
