@@ -12,8 +12,8 @@ const GamesCarrousel = ({language}) => {
                     <img className={Style.image} src={item.image} alt={item.name} />
                     <section>
                     <article>
-                        <h2>{language === 'ES' ? 'Genero' : 'Genre' }</h2>
-                        <h3>{language === 'ES' ? item.genero : item.genre}</h3>
+                        <h2 className={Style.tittle}>{language === 'ES' ? 'Genero' : 'Genre' }</h2>
+                        <h3 className={Style.genre} >{language === 'ES' ? item.genero : item.genre}</h3>
                     </article>
                     <button>{language === 'ES' ? 'Ver mas..' : 'See more...'}</button>
                     <a href={item.steamPage} target="_blank" rel="noopener noreferrer">

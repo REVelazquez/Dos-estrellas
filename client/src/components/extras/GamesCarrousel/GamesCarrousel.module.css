@@ -1,3 +1,5 @@
+@import url('../../../data/fonts/fonts.css');
+
 .container{
     display: flex;
 }
@@ -6,3 +8,12 @@
     margin-right: 10px;
 }
 
+.tittle{
+    font-family: 'Alkatra';
+    margin-bottom: 0px;
+}
+
+.genre{
+    font-family: 'Lora';
+    margin-top: 0px;
+}
