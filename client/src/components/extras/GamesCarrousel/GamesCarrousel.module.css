@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+}
+.image{
+    border-radius: 1em;
+    margin-right: 10px;
+}
+
