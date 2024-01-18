@@ -62,19 +62,20 @@
     font-family: 'Lora_variable';
 }
 .languageButtons:hover{
+    color: black;
+    border-radius: 1em;
+    background-color: orange;
+    cursor: pointer;
+}
+.languageButtons:disabled{
     width: 3em;
     margin: .5em;
     border-radius: 1em;
     background-color: rgb(255, 42, 0);
     color: black;
-    cursor: pointer;
-}
-
-.languageButtons:disabled{
-    color: rgb(77, 72, 72);
-    background-color: rgba(7, 7, 7);
     cursor: default;
 }
+
 
 .link:hover{
     cursor:default;

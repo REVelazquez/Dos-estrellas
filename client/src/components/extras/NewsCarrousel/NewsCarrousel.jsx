@@ -37,7 +37,6 @@ const NewsCarrousel = ({ language }) => {
     const handleUnique= (index)=>{
         setCurrentNew(index)
         resetTimer()
-
     }
 // Cambio de noticia + animacion de barra
 useEffect(() => {
