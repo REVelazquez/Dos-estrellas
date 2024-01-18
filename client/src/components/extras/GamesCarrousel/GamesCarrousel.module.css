@@ -42,6 +42,9 @@
     font-family: 'Roboto';
     text-decoration: underline;
 }
+.buttonDetail:hover{
+    cursor: pointer;
+}
 
 .steam{
     color: white;

@@ -3,9 +3,12 @@ import { FaSteam } from "react-icons/fa";
 import Style from './GamesCarrousel.module.css'
 import { useEffect, useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from "react-router";
 
-const GamesCarrousel = ({ language }) => {
+const GamesCarrousel = ({ language, handleGames }) => {
     const currentElements = games
+    const navigate=useNavigate()
+
     if (currentElements.length <= 1) {
         currentElements.push(futureGames)
     }
@@ -45,30 +48,11 @@ const GamesCarrousel = ({ language }) => {
           resetTimer(); // Asegúrate de reiniciar el temporizador al limpiar el intervalo.
         };
       }, [currentElements.length, currentPost]);
-      
-      useEffect(() => {
-        const timer = setTimeout(() => {
-            setTimeElapsed(timeElapsed + 1000);
-            if (timeElapsed >= 15000) {
-                resetTimer();
-            }
-        }, 1000);
-    
-        return () => clearTimeout(timer);
-    }, [timeElapsed]);
-    
-    let progressBarClass = Style.progressBarSmall;
 
-    const progressBarWidth = (timeElapsed / 15000) * 100; // Cambiar a 15000 (15 segundos)
-
-
-if (progressBarWidth > 50) {
-  progressBarClass = Style.progressBarMedium;
-}
-
-if (progressBarWidth >= 100 || timeElapsed === 0) {
-  progressBarClass = Style.progressBarAnimate;
-}
+    const handleButton = (id)=>{
+        navigate('/games')
+        handleGames(id)
+    }
 
     return (
         <div className={Style.wrapper}>
@@ -84,7 +68,7 @@ if (progressBarWidth >= 100 || timeElapsed === 0) {
                   <h2 className={Style.tittle}>{language === 'ES' ? 'Genero:' : 'Genre:'}</h2>
                   <h3 className={Style.genre}>{currentElements[currentPost].genre}</h3>
                   <section>
-                    <button className={Style.buttonDetail} >{language === 'ES' ? 'Detalles' : 'Details'}</button>
+                    <button className={Style.buttonDetail} onClick={()=>handleButton(currentElements[currentPost].id)} >{language === 'ES' ? 'Detalles' : 'Details'}</button>
                     <a href={currentElements[currentPost].steamPage} target="_blank"  rel="noopener noreferrer"   className={Style.steam}>{<FaSteam/>}</a>
                   </section>
                 </section>

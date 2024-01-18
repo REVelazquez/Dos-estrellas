@@ -1,20 +1,16 @@
-import {useState } from "react"
-// import GameSelect from "../../extras/GameSelect/GameSelect"
+
+import GameSelect from "../../extras/GameSelect/GameSelect"
 import { DetailCountless } from "../../extras"
 import Style from './Games.module.css'
 
-const Games= ({language})=>{
-
-    const [countless, setCountless]= useState(true)
-
-    // const handleState= ()=>{
-    //    setCountless(!countless)
-    // }
+const Games= ({language, handleGames, games})=>{
+    
 
     return(
         <div className={Style.container}>
-            {/* <GameSelect handleState={handleState} /> */}
-            {countless && <DetailCountless language={language} />}
+            <GameSelect handleGames={handleGames} />
+            <section className={Style.space}></section>
+            {games === 1 && <DetailCountless language={language} />}
         </div>
     )
 }

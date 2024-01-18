@@ -4,20 +4,41 @@ import { NavLink } from "react-router-dom"
 
 import { company } from "../../../data/img"
 
-const NavBar = ({language, changeLanguageEN, changeLanguageES})=>{
+const NavBar = ({language, changeLanguageEN, changeLanguageES, handleGames})=>{
 
     const navigate=useNavigate()
+
+    const handleGamesButton = ()=>{
+        handleGames(0)
+        navigate('/games')
+    }
+    const handleNews=()=>{
+        handleGames(0)
+        navigate('/news')
+    }
+    const handleAbout=()=>{
+        handleGames(0)
+        navigate('/about')
+    }
+    const handleContact=()=>{
+        handleGames(0)
+        navigate('/contact')
+    }
+
+    const handleHome=()=>{
+        handleGames(0)
+    }
 
     return(
         <nav className={Style.nav}>
             <section className={Style.buttons}>
-            <button className={Style.navButtons} onClick={()=>navigate('/News')}>{language === 'ES' ? 'Noticias': 'News'}</button>
-            <button className={Style.navButtons} onClick={()=>navigate('/games')}>{language === 'ES' ? 'Juegos' : 'Games'}</button>
-            <NavLink  className={Style.link} to='/'>
+            <button className={Style.navButtons} onClick={handleNews}>{language === 'ES' ? 'Noticias': 'News'}</button>
+            <button className={Style.navButtons} onClick={handleGamesButton}>{language === 'ES' ? 'Juegos' : 'Games'}</button>
+            <NavLink  className={Style.link} to='/' onClick={handleHome}>
             <img className={Style.img} src={company[1]} alt="" />
             </NavLink>
-            <button className={Style.navButtons} onClick={()=>navigate('/contact')}>{language === 'ES' ? 'Contacto': 'Contact'}</button>
-            <button className={Style.navButtons} onClick={()=>navigate('/about')}>{language === 'ES' ? 'Conocenos': 'About us'}</button>
+            <button className={Style.navButtons} onClick={handleContact}>{language === 'ES' ? 'Contacto': 'Contact'}</button>
+            <button className={Style.navButtons} onClick={handleAbout}>{language === 'ES' ? 'Conocenos': 'About us'}</button>
 
             </section>
             <section className={Style.langButtons}>

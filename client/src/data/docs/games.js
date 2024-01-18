@@ -1,6 +1,7 @@
 import { gamesImg } from "../img"
 
 export const games=[{
+    id:1,
     name:'Countless Army',
     genre:'Inverse Tower Defense',
     genero:'Tower Defense Inverso',
@@ -9,6 +10,7 @@ export const games=[{
 }]
 
 export const futureGames={
+    id:0,
     name:'Future projects',
     textEn:'Soon other games will come...',
     textEs: 'Pronto habra otros juegos...',
