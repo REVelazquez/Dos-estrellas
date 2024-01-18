@@ -8,25 +8,37 @@ const NavBar = ({language, changeLanguageEN, changeLanguageES, handleGames})=>{
 
     const navigate=useNavigate()
 
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "auto", 
+        });
+      };
+
     const handleGamesButton = ()=>{
         handleGames(0)
         navigate('/games')
+        scrollToTop()
     }
     const handleNews=()=>{
         handleGames(0)
         navigate('/news')
+        scrollToTop()
     }
     const handleAbout=()=>{
         handleGames(0)
         navigate('/about')
+        scrollToTop()
     }
     const handleContact=()=>{
         handleGames(0)
         navigate('/contact')
+        scrollToTop()
     }
 
     const handleHome=()=>{
         handleGames(0)
+        scrollToTop()
     }
 
     return(
