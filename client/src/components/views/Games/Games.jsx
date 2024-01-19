@@ -4,7 +4,6 @@ import { DetailCountless } from "../../extras"
 import Style from './Games.module.css'
 
 const Games= ({language, handleGames, games})=>{
-    console.log(games)
 
     return(
         <div className={Style.container}>
