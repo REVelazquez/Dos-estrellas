@@ -7,6 +7,8 @@
 }
 .banner{
     height: 14em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
     border-bottom-left-radius:4em;
     border-bottom-right-radius: 4em;
 }

@@ -1,9 +1,7 @@
-@import url('../../../data/fonts/fonts.css');
-
 .section{
     width:12em;
-    height:25em;
-    margin-Left:5em ;
+    height:20em;
+    margin-Left:0px ;
     border-Style:double;
     border-Color:whitesmoke;
     margin-Top:1em;
@@ -11,25 +9,11 @@
     background-color: black;
 }
 .img{
-    height: 8em;
+    height: 5em;
     size: cover;
     margin: .5em;
 }
 
-.category{
-    color: white;
-    font-size: x-small;
-}
-.catBut{
-    color: white;
-    font-size: x-small;
-    background-color: black;
-    border-color: none;
-    border-style: none;
-}
-.catBut:hover{
-    cursor: pointer;
-}
 
 .container{
     margin-top: 2em;
@@ -56,3 +40,4 @@
     font-size: x-small;
     font-weight: lighter;
 }
+

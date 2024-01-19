@@ -1,7 +1,46 @@
+@import url('../../../data/fonts/fonts.css');
+
 .container{
     min-height: 78vh;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    place-content: center;
 
+}
+.button {
+    width: fit-content;
+    height: 2em;
+    margin: 2em;
+    background-color: rgba(17, 17, 17, 0);
+    border-style: none;
+    color: antiquewhite;
+    font-size: medium;
+    z-index: 1000;
+    position: fixed;
+    font-weight: 700;
+    border-radius: 3em;
+    left: 1em;
+    font-family: 'Lora';
+}
+.button:hover{
+    background-color: orange;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
 .space{
     height: 1em;
+}
+.separator{
+    margin-top: 5px;
+    width: 100%;
+    background-color: rgb(236, 188, 97);
+    height: 2px;
+}
+.separator2{
+    margin-top: 5px;
+    width: 100%;
+    height: 5px;
 }

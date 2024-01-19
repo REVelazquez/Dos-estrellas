@@ -1,5 +1,6 @@
 import {countlessText} from "../../../data/docs/countlessArmy"
 import { imagenes, gifs } from "../../../data/img/Countless Army"
+import CountlessNews from "../CountlessNews/CountlessNews"
 import Style from './DetailCountless.module.css'
 
 const DetailCountless = ({language})=>{
@@ -70,9 +71,8 @@ const DetailCountless = ({language})=>{
                     </ul>
                 </section>
             </section>
-
-
-
+            <h3 className={Style.tittle} >{language ==='ES' ?'Noticias relacionadas' :'Related news'}</h3>
+            <CountlessNews language={language} />
         </section>
     )
 }
