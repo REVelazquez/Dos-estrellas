@@ -25,7 +25,7 @@ const Footer = ({language})=>{
                 {language === 'ES' ? <h3 className={Style.tittle} >Nuestras redes:</h3> : <h3 className={Style.tittle} >Our socials:</h3>}
                 <div>
                     <a href='https://www.youtube.com/@Dos_Estrellas' rel='noreferrer' target='_blank' className={Style.logos}>{<FiYoutube  />}</a>
-                    <a className={Style.logos}>{<PiTiktokLogo />}</a>
+                    <a href='https://www.tiktok.com/@dos_estellas' rel='noreferrer' target='_blank' className={Style.logos}>{<PiTiktokLogo />}</a>
                 </div>
                 </section> 
             </section>
