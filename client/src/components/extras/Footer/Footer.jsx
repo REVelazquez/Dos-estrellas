@@ -24,7 +24,7 @@ const Footer = ({language})=>{
                 : <h3 className={Style.tittle}>{help}<NavLink to='/contact' className={Style.contact2}>Contact us!</NavLink></h3>}
                 {language === 'ES' ? <h3 className={Style.tittle} >Nuestras redes:</h3> : <h3 className={Style.tittle} >Our socials:</h3>}
                 <div>
-                    <a href='https://www.youtube.com/@Dos_Estrellas' target='_blank' className={Style.logos}>{<FiYoutube  />}</a>
+                    <a href='https://www.youtube.com/@Dos_Estrellas' rel='noreferrer' target='_blank' className={Style.logos}>{<FiYoutube  />}</a>
                     <a className={Style.logos}>{<PiTiktokLogo />}</a>
                 </div>
                 </section> 

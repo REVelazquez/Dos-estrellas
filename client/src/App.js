@@ -1,11 +1,10 @@
 import './App.css';
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { Contact, Home, Games, News, Error, About, NewsDetail } from './components/views';
 import { NavBar, Footer, Top } from './components/extras/index'
 import { useState } from 'react';
 
 const App= () => {
-  const navigate= useNavigate()
   const location=useLocation()
 
   const localLanguage= navigator.language.toLocaleLowerCase()
@@ -44,7 +43,7 @@ const App= () => {
         <Route path='/news'  element={<News language={language} />} />
         <Route path='/news/:id' element={<NewsDetail language={language} />} />
         <Route path='/about'  element={<About language={language} />} />
-        <Route path='/*'  element={<Error/>} />
+        <Route path='/*'  element={<Error language={language} /> } />
       </Routes>
       {location.pathname !== '/error' && <Top />}
       {location.pathname !== '/error' && <Footer language={language} />}
