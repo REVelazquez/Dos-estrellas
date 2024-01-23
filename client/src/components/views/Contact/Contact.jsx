@@ -21,6 +21,7 @@ const Contact = ({language})=>{
                 <p className={Style.presentation3} >{language === 'ES' ? presentacion[3] : presentation[3]}</p>
                 <a className={Style.email} href={`mailto:${mailEmpresa}`} style={{color:'white', textDecoration:'none'}}>{mailEmpresa}</a>
             </section>
+            <div className={Style.spacer}></div>
         </div>
     )
 }

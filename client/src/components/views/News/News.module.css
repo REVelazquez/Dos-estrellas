@@ -1,36 +1,75 @@
 @import url('../../../data/fonts/fonts.css');
 /* pantalla de 1900 * 1080 */
-.container{
-    align-items: center;
-    min-height: 78vh;
-    place-content: center;
-    align-items: center;
+@media (min-width:1400px) {
+    
+    .container{
+        align-items: center;
+        min-height: 78vh;
+        place-content: center;
+        align-items: center;
+    }
+    .filterContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        margin: 0px;
+    }
+    .filterText{
+        color: white;
+        margin-right: 5px;
+        font-size: small;
+        font-family: 'Alkatra';
+        font-weight: 300;
+    }
+    .select{
+        background-color: rgb(7, 7, 7);
+        color: whitesmoke;
+        font-size: small;
+        font-family: 'Alkatra';
+    }
+    .newsContainer{
+        display: grid;
+        grid-template-columns: repeat(5, 300px);
+        align-items: center;
+        place-content: center;
+        min-height: 27em;
+        margin-bottom: 1em;
+    }
 }
-.filterContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    place-content: center;
-    margin: 0px;
-}
-.filterText{
-    color: white;
-    margin-right: 5px;
-    font-size: small;
-    font-family: 'Alkatra';
-    font-weight: 300;
-}
-.select{
-    background-color: rgb(7, 7, 7);
-    color: whitesmoke;
-    font-size: small;
-    font-family: 'Alkatra';
-}
-.newsContainer{
-    display: grid;
-    grid-template-columns: repeat(5, 300px);
-    align-items: center;
-    place-content: center;
-    min-height: 27em;
-    margin-bottom: 1em;
+@media (max-width:360px) {
+    
+    .container{
+        align-items: center;
+        place-content: center;
+        align-items: center;
+    }
+    .filterContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        margin: 0px;
+    }
+    .filterText{
+        color: white;
+        margin-right: 5px;
+        font-size: xx-small;
+        font-family: 'Alkatra';
+        font-weight: 300;
+    }
+    .select{
+        background-color: rgb(7, 7, 7);
+        color: whitesmoke;
+        font-size: x-small;
+        font-family: 'Alkatra';
+    }
+    .newsContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 175px);
+        align-items: center;
+        place-content: center;
+        margin-bottom: 1em;
+        margin-right: 4em;
+    }
 }

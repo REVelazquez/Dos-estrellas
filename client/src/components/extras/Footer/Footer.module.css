@@ -1,25 +1,27 @@
-.copy{
-    color: whitesmoke;
-    font-size: small;
-    width: 100%;
 
-}
-.container{
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    height: 10em;
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-    align-items: center;
-    place-content: center;
-}
-.section{
-    display: flex;
-    flex-direction: row;
+@media (min-width:1400px) {
+    
+    .copy{
+        color: whitesmoke;
+        font-size: small;
+        width: 100%;
+    }
+    .container{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        height: 10em;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        align-items: center;
+        place-content: center;
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
 }
 .section2{
     display: flex;
@@ -69,4 +71,138 @@
 }
 .logos:hover{
     cursor: pointer;
+}
+}
+
+@media (max-width:360px) {
+    .copy{
+        color: whitesmoke;
+        font-size: xx-small;
+    }
+    .container{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        height: 10em;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        align-items: center;
+        place-content: center;
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        width: 4em;
+    }
+    .link{
+        margin-top: .125em;
+        background-color: black;
+        border-width: 2px;
+        border-color: none;
+        border-style: double;
+    }
+    .link:hover{
+        border-color: wheat;
+        border-radius: 2px;
+        border-style: double;
+        cursor: pointer;
+    }
+    .contact2{
+        color: orangered;
+        background-color: black;
+        border-color: none;
+        border-style: none;
+        font-size: small;
+        text-decoration: none;
+    }
+    .contact2:hover{
+        text-decoration: underline;
+    }
+    .tittle{
+        color: whitesmoke;
+        font-size: small;
+        margin-left: .25em;
+        margin-right: .25em;
+        margin-bottom: 2px;
+    }
+    .logos{
+        color: whitesmoke;
+        margin-left: .125em;
+        font-size: medium;
+    }
+    .logos:hover{
+        cursor: pointer;
+    }
+
+}
+@media (min-width:360px) and (max-width:480px) {
+    .copy{
+        color: whitesmoke;
+        font-size: xx-small;
+    }
+    .container{
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        height: 10em;
+        width: 100%;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        align-items: center;
+        place-content: center;
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+    }
+    .logo{
+        width: 4em;
+    }
+    .link{
+        margin-top: .125em;
+        background-color: black;
+        border-width: 2px;
+        border-color: none;
+        border-style: double;
+    }
+    .link:hover{
+        border-color: wheat;
+        border-radius: 2px;
+        border-style: double;
+        cursor: pointer;
+    }
+    .contact2{
+        color: orangered;
+        background-color: black;
+        border-color: none;
+        border-style: none;
+        font-size: small;
+        text-decoration: none;
+    }
+    .contact2:hover{
+        text-decoration: underline;
+    }
+    .tittle{
+        color: whitesmoke;
+        font-size: medium;
+        margin-left: .25em;
+        margin-right: .25em;
+        margin-bottom: 2px;
+    }
+    .logos{
+        color: whitesmoke;
+        margin-left: .125em;
+        font-size: large;
+    }
+    .logos:hover{
+        cursor: pointer;
+    }
+
 }

@@ -1,63 +1,64 @@
 @import url('../../../data/fonts/fonts.css');
-.wrapper{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    place-content: center;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30em;
-}
-
-.imgAndNew{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 8px;
-}
-
-.img{
-    width: 10em;
-    margin-right: 0px;
-}
-.textContainer{
-    max-width: 20em;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-    align-items: center;
-    justify-content: center;
-}
-
-.tittle{
-    color: white;
-    font-family: 'Alkatra';
-    font-size: larger;
-    margin: 5px;
-}
-
-.text{
-    color: white;
-    font: 'Merriweather';
-    font-weight: bold;
-    font-size: medium;
-    margin: 2px;
-}
-
-.link{
-    font: 'Roboto';
-    color: orangered;
-    font-size: small;
-}
-
-.progressBarContainer{
-    width: 50%;
-    height: 2px;
-    background-color: orange;
-}
-
+@media (min-width:1400px) {
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30em;
+    }
+    
+    .imgAndNew{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 8px;
+    }
+    
+    .img{
+        width: 10em;
+        margin-right: 0px;
+    }
+    .textContainer{
+        max-width: 20em;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .tittle{
+        color: white;
+        font-family: 'Alkatra';
+        font-size: larger;
+        margin: 5px;
+    }
+    
+    .text{
+        color: white;
+        font: 'Merriweather';
+        font-weight: bold;
+        font-size: medium;
+        margin: 2px;
+    }
+    
+    .link{
+        font: 'Roboto';
+        color: orangered;
+        font-size: small;
+    }
+    
+    .progressBarContainer{
+        width: 50%;
+        height: 2px;
+        background-color: orange;
+    }
+    
 .progressBarAnimate {
     height: 100%;
     background-color: #ff4500;
@@ -104,4 +105,221 @@
 .pointButton:disabled{
     color: gray;
     cursor: auto;
+}
+}
+@media (max-width:360px) {
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imgAndNew{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+    
+    .img{
+        width: 125px;
+        margin-right: 0px;
+    }
+    .textContainer{
+        max-width: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .tittle{
+        color: white;
+        font-family: 'Alkatra';
+        font-size: small;
+        margin: 5px;
+    }
+    
+    .text{
+        color: white;
+        font: 'Merriweather';
+        font-weight: bold;
+        font-size: x-small;
+        margin: 2px;
+    }
+    
+    .link{
+        font: 'Roboto';
+        color: orangered;
+        font-size: xx-small;
+    }
+    
+    .progressBarContainer{
+        width: 50%;
+        height: 2px;
+        background-color: orange;
+    }
+    
+.progressBarAnimate {
+    height: 100%;
+    background-color: #ff4500;
+    width: 0%;
+    animation: progressAnimation 10s linear forwards; /* Animación de 10 segundos */
+}
+
+@keyframes progressAnimation {
+    to {
+        width: 100%; /* Se completa hasta el 100% */
+    }
+}
+
+.button{
+    background: None;
+    border-style: none;
+    font-size: medium;
+    width: 1em;
+    height: 1em;
+    color: white;
+    margin: auto;
+    justify-content: center;
+    border-radius: 2em;
+    text-align: center
+}
+
+.button:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+.pointButton{
+    background: none;
+    border-style: none;
+    color: white;
+    font-size: medium;
+    border-radius: .5em;
+}
+.pointButton:hover{
+    cursor: pointer;
+    color: #ff4500;
+}
+
+.pointButton:disabled{
+    color: gray;
+    cursor: auto;
+}
+}
+@media (min-width:360px) and (max-width:480px){
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imgAndNew{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+    }
+    
+    .img{
+        width: 125px;
+        margin-right: 0px;
+    }
+    .textContainer{
+        max-width: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .tittle{
+        color: white;
+        font-family: 'Alkatra';
+        font-size: small;
+        margin: 5px;
+    }
+    
+    .text{
+        color: white;
+        font: 'Merriweather';
+        font-weight: bold;
+        font-size: x-small;
+        margin: 2px;
+    }
+    
+    .link{
+        font: 'Roboto';
+        color: orangered;
+        font-size: xx-small;
+    }
+    
+    .progressBarContainer{
+        width: 50%;
+        height: 2px;
+        background-color: orange;
+    }
+    
+.progressBarAnimate {
+    height: 100%;
+    background-color: #ff4500;
+    width: 0%;
+    animation: progressAnimation 10s linear forwards; /* Animación de 10 segundos */
+}
+
+@keyframes progressAnimation {
+    to {
+        width: 100%; /* Se completa hasta el 100% */
+    }
+}
+
+.button{
+    background: None;
+    border-style: none;
+    font-size: medium;
+    width: 1em;
+    height: 1em;
+    color: white;
+    margin: auto;
+    justify-content: center;
+    border-radius: 2em;
+    text-align: center
+}
+
+.button:hover{
+    color: orangered;
+    cursor: pointer;
+}
+
+.pointButton{
+    background: none;
+    border-style: none;
+    color: white;
+    font-size: medium;
+    border-radius: .5em;
+}
+.pointButton:hover{
+    cursor: pointer;
+    color: #ff4500;
+}
+
+.pointButton:disabled{
+    color: gray;
+    cursor: auto;
+}
 }

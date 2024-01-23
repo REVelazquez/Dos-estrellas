@@ -1,16 +1,48 @@
 @import url('../../../data/fonts/fonts.css');
 
 /* esto es para screens de 1600 x 900, tengo que acomodar para la mia */
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    place-content: center;
-    min-height: 78vh;
-
+@media (min-width:1400px) {
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+        
+    }
+    
+    .tittle{
+        color: white;
+        font-family: 'Alkatra';
+    }
 }
 
-.tittle{
-    color: white;
-    font-family: 'Alkatra';
+@media (max-width:360px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .tittle{
+        color: white;
+        font-family: 'Alkatra';
+        margin-bottom: 10px;
+    }
 }
+
+@media (min-width: 360px) and (max-width:480px) {
+    .container{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        column-gap: 40px;
+        align-items: center;
+        min-height: 575px;
+    }
+    .tittle{
+        color: white;
+        font-family: 'Alkatra';
+    }
+}
+

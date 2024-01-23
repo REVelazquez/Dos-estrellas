@@ -1,36 +1,38 @@
 @import url('../../../data/fonts/fonts.css');
 
-.section{
-    width:12em;
-    height:25em;
-    margin-Left:5em ;
-    border-Style:double;
-    border-Color:whitesmoke;
-    margin-Top:1em;
-    color:whitesmoke;
-    background-color: black;
-}
-.img{
-    height: 8em;
-    size: cover;
-    margin: .5em;
-}
-
-.category{
-    color: white;
-    font-size: x-small;
-}
-.catBut{
-    color: white;
-    font-size: x-small;
-    background-color: black;
-    border-color: none;
-    border-style: none;
-}
-.catBut:hover{
-    cursor: pointer;
-}
-
+@media (min-width:1400px) {
+    
+    .section{
+        width:12em;
+        height:25em;
+        margin-Left:5em ;
+        border-Style:double;
+        border-Color:whitesmoke;
+        margin-Top:1em;
+        color:whitesmoke;
+        background-color: black;
+    }
+    .img{
+        height: 8em;
+        size: cover;
+        margin: .5em;
+    }
+    
+    .category{
+        color: white;
+        font-size: x-small;
+    }
+    .catBut{
+        color: white;
+        font-size: x-small;
+        background-color: black;
+        border-color: none;
+        border-style: none;
+    }
+    .catBut:hover{
+        cursor: pointer;
+    }
+    
 .container{
     margin-top: 2em;
     margin-bottom: 2em;
@@ -55,4 +57,63 @@
     font-family: 'Roboto';
     font-size: x-small;
     font-weight: lighter;
+}
+}
+@media (max-width:360px) {
+    
+    .section{
+        width:150px;
+        height:250px;
+        margin-Left:2.5em ;
+        border-Style:double;
+        border-Color:whitesmoke;
+        margin-Top:10px;
+        color:whitesmoke;
+        background-color: black;
+    }
+    .img{
+        height: 60px;
+        size: cover;
+    }
+    
+    .category{
+        color: white;
+        font-size: xx-small;
+    }
+    .catBut{
+        color: white;
+        font-size: xx-small;
+        background-color: black;
+        border-color: none;
+        border-style: none;
+    }
+    .catBut:hover{
+        cursor: pointer;
+    }
+    
+.container{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.tittle{
+    color:white;
+    margin-top: 0px;
+    font-family: 'Alkatra';
+    font-size: small;
+    font-weight: 200;
+}
+
+.text{
+    font-family: 'Lora';
+    font-size: xx-small;
+    font-weight:lighter;
+}
+
+.link{
+    color: orangered;
+    font-family: 'Roboto';
+    font-size: xx-small;
+    font-weight: lighter;
+}
 }

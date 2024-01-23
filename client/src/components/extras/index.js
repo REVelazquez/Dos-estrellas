@@ -1,5 +1,4 @@
 import NavBar from "./Navbar/NavBar";
-import HomeCarrousel from "./HomeCarrousel/HomeCarrousel";
 import DetailCountless from "./DetailCountless/DetailCountless";
 import Footer from "./Footer/Footer";
 import Form from "./Form/Form";
@@ -17,7 +16,6 @@ export {
     Form,
     GameSelect,
     GamesCarrousel,
-    HomeCarrousel,
     NavBar,
     NewsCards,
     NewsCarrousel,

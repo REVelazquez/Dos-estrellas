@@ -1,82 +1,238 @@
 @import url('../../../data/fonts/fonts.css');
-.nav{
-    top: 0;
-    position: sticky;
-    z-index: 100; 
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(7, 7, 7);
-    align-items: center;
-    place-content: center;
-}
-.buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    place-content: center;
-    margin-left: 7em;
-}
-.langButtons{
-    display: flex;
-    align-items: center;
-    place-content: center;
+@media (min-width:1400px) {
+    .nav{
+        top: 0;
+        position: sticky;
+        z-index: 100; 
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(7, 7, 7);
+        align-items: center;
+        place-content: center;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        margin-left: 7em;
+    }
+    .langButtons{
+        display: flex;
+        align-items: center;
+        place-content: center;
+    
+        font-family: 'Lora_variable';
+    }
+    .img{
+        margin-top: .25em;
+        height: 4em;
+    }
+    .img:hover{
+        cursor: pointer;
+    }
+    .navButtons{
+        color: whitesmoke;
+        font-weight: 600;
+        margin: .5em;
+        width: 6em;
+        height: 2em;
+        font-size: x-large;
+        background-color: rgba(7, 7, 7);
+        border-color: none;
+        border-style: none;
+        font-family: 'Alkatra';
+    }
+    .navButtons:hover{
+        width: 6em;
+        height: 2em;
+        margin: .5em;
+        border-radius: 2em;
+        font-size: x-large;
+        background-color: rgba(255, 166, 0);
+        color: black;
+        cursor:pointer;
+    }
+    .languageButtons{
+        color: white;
+        font-weight: 600;
+        margin: .5em;
+        width: 3em;
+        border-style: none;
+        background-color: rgba(7, 7, 7);
+        font-family: 'Lora_variable';
+    }
+    .languageButtons:hover{
+        color: black;
+        border-radius: 1em;
+        background-color: orange;
+        cursor: pointer;
+    }
+    .languageButtons:disabled{
+        width: 3em;
+        margin: .5em;
+        border-radius: 1em;
+        background-color: rgb(255, 42, 0);
+        color: black;
+        cursor: default;
+    }
+    
+    
+    .link:hover{
+        cursor:default;
+    }    
+} 
 
-    font-family: 'Lora_variable';
-}
-.img{
-    margin-top: .25em;
-    height: 4em;
-}
-.img:hover{
-    cursor: pointer;
-}
-.navButtons{
-    color: whitesmoke;
-    font-weight: 600;
-    margin: .5em;
-    width: 6em;
-    height: 2em;
-    font-size: x-large;
-    background-color: rgba(7, 7, 7);
-    border-color: none;
-    border-style: none;
-    font-family: 'Alkatra';
-}
-.navButtons:hover{
-    width: 6em;
-    height: 2em;
-    margin: .5em;
-    border-radius: 2em;
-    font-size: x-large;
-    background-color: rgba(255, 166, 0);
-    color: black;
-    cursor:pointer;
-}
-.languageButtons{
-    color: white;
-    font-weight: 600;
-    margin: .5em;
-    width: 3em;
-    border-style: none;
-    background-color: rgba(7, 7, 7);
-    font-family: 'Lora_variable';
-}
-.languageButtons:hover{
-    color: black;
-    border-radius: 1em;
-    background-color: orange;
-    cursor: pointer;
-}
-.languageButtons:disabled{
-    width: 3em;
-    margin: .5em;
-    border-radius: 1em;
-    background-color: rgb(255, 42, 0);
-    color: black;
-    cursor: default;
-}
+@media (max-width:360px) {
+    .nav{
+        top: 0;
+        position: sticky;
+        z-index: 100; 
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(7, 7, 7);
+        align-items: center;
+        place-content: center;
+        width: 100%;
+    }
+    .img{
+        height: 2em;
+    }
+    .img:hover{
+        cursor: pointer;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        margin-right: 2px;
+        
+    }
+    .langButtons{
+        display: flex;
+        align-items: center;
+        place-content: center;
+        margin-right: 2px;
+        font-family: 'Lora_variable';
+    }
+    .navButtons{
+        color: whitesmoke;
+        font-weight: 400;
+        margin: 1px;
+        width: 5.25em;
+        height: 2em;
+        font-size: x-small;
+        background-color: rgba(7, 7, 7);
+        border-color: none;
+        border-style: none;
+        font-family: 'Alkatra';
+    }
+    .navButtons:hover{
+        border-radius: 10px;
+        font-size:x-small;
+        background-color: rgba(255, 166, 0);
+        color: black;
+        cursor:pointer;
+    }
+    .languageButtons{
+        color: white;
+        font-weight: 400;
+        width: 2.5em;
+        border-style: none;
+        background-color: rgba(7, 7, 7);
+        font-family: 'Lora_variable';
+        font-size: xx-small;
+    }
+    .languageButtons:hover{
+        color: black;
+        border-radius: 1em;
+        background-color: orange;
+        cursor: pointer;
+    }
+    .languageButtons:disabled{
+        width: 2.5em;
+        margin: .5em;
+        border-radius: 1em;
+        background-color: rgb(255, 42, 0);
+        color: black;
+        cursor: default;
+    }
 
+}
+@media (min-width:360px) and (max-width:480px) {
+    .nav{
+        top: 0;
+        position: sticky;
+        z-index: 100; 
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(7, 7, 7);
+        align-items: center;
+        place-content: center;
+    }
+    .img{
+        height: 2em;
+    }
+    .img:hover{
+        cursor: pointer;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        margin-left: 5em;
+    }
+    .langButtons{
+        display: flex;
+        align-items: center;
+        place-content: center;
+        margin-left: 0.5em;
+        margin-right: 3em;
+        font-family: 'Lora_variable';
+    }
+    .navButtons{
+        color: whitesmoke;
+        font-weight: 400;
+        margin-right: 5px;
+        width: 5.125em;
+        height: 2em;
+        font-size: x-small;
+        background-color: rgba(7, 7, 7);
+        border-color: none;
+        border-style: none;
+        font-family: 'Alkatra';
+    }
+    .navButtons:hover{
+        border-radius: 10px;
+        font-size:x-small;
+        background-color: rgba(255, 166, 0);
+        color: black;
+        cursor:pointer;
+    }
+    .languageButtons{
+        color: white;
+        font-weight: 400;
+        width: 2.5em;
+        border-style: none;
+        background-color: rgba(7, 7, 7);
+        font-family: 'Lora_variable';
+        font-size: xx-small;
+    }
+    .languageButtons:hover{
+        color: black;
+        border-radius: 1em;
+        background-color: orange;
+        cursor: pointer;
+    }
+    .languageButtons:disabled{
+        width: 2.5em;
+        margin: .5em;
+        border-radius: 1em;
+        background-color: rgb(255, 42, 0);
+        color: black;
+        cursor: default;
+    }
 
-.link:hover{
-    cursor:default;
 }
