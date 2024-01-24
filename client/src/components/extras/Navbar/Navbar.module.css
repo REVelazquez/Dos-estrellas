@@ -160,7 +160,7 @@
     }
 
 }
-@media (min-width:360px) and (max-width:480px) {
+@media (min-width:361px) and (max-width:480px) {
     .nav{
         top: 0;
         position: sticky;

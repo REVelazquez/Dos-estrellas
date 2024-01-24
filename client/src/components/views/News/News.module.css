@@ -40,9 +40,12 @@
 @media (max-width:360px) {
     
     .container{
+        margin-top: 15px;
         align-items: center;
         place-content: center;
         align-items: center;
+        width: 95%;
+        min-height: 275px;
     }
     .filterContainer{
         display: flex;
@@ -66,7 +69,46 @@
     }
     .newsContainer{
         display: grid;
-        grid-template-columns: repeat(2, 175px);
+        grid-template-columns: repeat(2, 100px);
+        align-items: center;
+        place-content: center;
+        margin-bottom: 1em;
+        margin-right: 4em;
+    }
+}
+@media (min-width:360px) and (max-width:480px) {
+    
+    .container{
+        margin-top: 40px;
+        align-items: center;
+        place-content: center;
+        align-items: center;
+        width: 95%;
+        min-height: 485px;
+    }
+    .filterContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        margin: 0px;
+    }
+    .filterText{
+        color: white;
+        margin-right: 5px;
+        font-size: small;
+        font-family: 'Alkatra';
+        font-weight: 300;
+    }
+    .select{
+        background-color: rgb(7, 7, 7);
+        color: whitesmoke;
+        font-size: small;
+        font-family: 'Alkatra';
+    }
+    .newsContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
         align-items: center;
         place-content: center;
         margin-bottom: 1em;
