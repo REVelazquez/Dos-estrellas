@@ -84,7 +84,7 @@
         place-content: center;
         align-items: center;
         width: 95%;
-        min-height: 485px;
+        min-height: 500px;
     }
     .filterContainer{
         display: flex;

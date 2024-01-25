@@ -1,42 +1,45 @@
 @import url('../../../data/fonts/fonts.css');
-.mainContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    place-content: center;
-}
-.banner{
-    height: 14em;
-    border-top-left-radius: 1em;
-    border-top-right-radius: 1em;
-    border-bottom-left-radius:4em;
-    border-bottom-right-radius: 4em;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.imgTittle{
-    height: 4.5em;
-}
-.containerDetails{
-    display: flex;
-    flex-direction: row;
-}
-.articles{
-    width: 15em;
-}
-.gifs{
-    height: 15em;
-    margin-left: .5em;
-}
-.texto{
-    color: whitesmoke;
-    font-family:'Lora';
-    font-size:medium;
-}
-.reqContainer{
+
+@media (min-width:1400px) {
+    
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+    }
+    .banner{
+        height: 14em;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        border-bottom-left-radius:4em;
+        border-bottom-right-radius: 4em;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgTittle{
+        height: 4.5em;
+    }
+    .containerDetails{
+        display: flex;
+        flex-direction: row;
+    }
+    .articles{
+        width: 15em;
+    }
+    .gifs{
+        height: 15em;
+        margin-left: .5em;
+    }
+    .texto{
+        color: whitesmoke;
+        font-family:'Lora';
+        font-size:medium;
+    }
+    .reqContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +51,7 @@
     font-weight: 100;
     margin-bottom: 0px;
     margin-top: 0.5em;
-
+    
 }
 .tittleReq{
     color: rgb(255, 246, 142);
@@ -61,4 +64,135 @@
 .requisites{
     margin-top: 5px;
     width: 20em;
+}
+}
+
+@media (max-width:360px) {
+    
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+    }
+    .banner{
+        width: 80%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius:40px;
+        border-bottom-right-radius: 40px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerDetails{
+        display: flex;
+        flex-direction: row;
+    }
+    .articles{
+        width: 50%;
+    }
+    .gifs{
+        height: 90px;
+        margin-left: .5em;
+    }
+    .texto{
+        color: whitesmoke;
+        font-family:'Lora';
+        font-size:8px;
+    }
+    .reqContainer{
+        margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tittle{
+    color: rgb(255, 246, 142);
+    font-family: 'Alkatra';
+    font-size:20px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top: 0.5em;
+    
+}
+.tittleReq{
+    color: rgb(255, 246, 142);
+    font-family: 'Alkatra';
+    font-size:21px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top: 2em;
+}
+.requisites{
+    margin-top: 5px;
+    width: 20em;
+}
+}
+
+@media (min-width:360px) and (max-width:480px) {
+    
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+    }
+    .banner{
+        width: 80%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius:40px;
+        border-bottom-right-radius: 40px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerDetails{
+        display: flex;
+        flex-direction: row;
+    }
+    .articles{
+        width: 50%;
+    }
+    .gifs{
+        height: 110px;
+        margin-left: .5em;
+    }
+    .texto{
+        color: whitesmoke;
+        font-family:'Lora';
+        font-size:10px;
+    }
+    .reqContainer{
+        margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tittle{
+    color: rgb(255, 246, 142);
+    font-family: 'Alkatra';
+    font-size:22px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top: 0.5em;
+    
+}
+.tittleReq{
+    color: rgb(255, 246, 142);
+    font-family: 'Alkatra';
+    font-size:23px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top: 2em;
+}
+.requisites{
+    margin-top: 5px;
+    width: 20em;
+}
 }

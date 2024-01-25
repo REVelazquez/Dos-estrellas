@@ -1,9 +1,8 @@
-.section{
-    width: 800;
-    height: 320px;
-    background-color: black;
-    width: 32%;
-    height: 20%;
+@media (min-width:1400px) {    
+    .section{
+        width: 800;
+        height: 230px;
+        background-color: black;
     margin-left: 34%;
     margin-right: 34%;
 }
@@ -14,11 +13,11 @@
     border-style: none;
     opacity: 0.6;
 }
-.imgbutton{
-    width: 0px;
+.imgButton{
+    width: 98%;
     flex-grow: 1;
     object-fit: cover;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 .button:hover{
     cursor: crosshair;
@@ -26,3 +25,65 @@
     filter: contrast(120%);
 }
 
+}
+
+@media (max-width:360px) {    
+    .section{
+        width: 80%;
+        height: 20%;
+        background-color: black;
+    margin-left: 34%;
+    margin-right: 34%;
+}
+.button{
+    margin-top: 1%;
+    background: none;
+    border-color: none;
+    border-style: none;
+    opacity: 0.6;
+}
+.imgButton{
+    width: 99%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+.button:hover{
+    cursor: crosshair;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+}
+@media (min-width:360px) and (max-width:480px) {    
+    .section{
+        width: 80%;
+        height: 20%;
+        background-color: black;
+    margin-left: 34%;
+    margin-right: 34%;
+}
+.button{
+    margin-top: 1%;
+    background: none;
+    border-color: none;
+    border-style: none;
+    opacity: 0.6;
+}
+.imgButton{
+    width: 99%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+.button:hover{
+    cursor: crosshair;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+}
