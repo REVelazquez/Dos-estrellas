@@ -1,5 +1,5 @@
 const emailVal=/^([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,6})$/
-export const Validation=(inputs, language)=>{
+export const Validation=(inputs, language, selectedCategory, selectedGame)=>{
 
     const errors ={}
 
@@ -39,18 +39,38 @@ export const Validation=(inputs, language)=>{
                 errors.tittle='You need a subject'
             }
             break;
-        case inputs.tittle.length <5:
+        
+        case  inputs.tittle.length <5:
             if(language === 'ES'){
                 errors.tittle='El asunto es demasiado corto'
             }else{
                 errors.tittle='The subject is too short'
             }
             break;
-        case inputs.tittle.length >35:
-            if(language === 'ES'){
-                errors.tittle='El asunto es muy largo'
-            }else{
-                errors.tittle='The subject is too long'
+        case selectedCategory:
+            if (selectedCategory ==='Contacto comercial'){
+                if (inputs.tittle.length - selectedCategory.length >35){
+                    if(language === 'ES'){
+                        errors.tittle='El asunto es demasiado largo'
+                    }else{
+                        errors.tittle='The subject is too large'
+                    }
+                }
+            }
+            if (selectedCategory !== '' && selectedCategory !== 'Contacto comercial' && selectedGame){
+                if (inputs.tittle.length - (selectedCategory.length+selectedGame.length) > 35){
+                    if(language === 'ES'){
+                        errors.tittle='El asunto es demasiado largo'
+                    }else{
+                        errors.tittle='The subject is too large'
+                    }
+            }else if(selectedCategory !== '' && selectedCategory !== 'Contacto comercial' && selectedGame === ''){
+                if (language === 'ES'){
+                    errors.tittle='Debes seleccionar un juego'
+                }else{
+                    errors.tittle='You must choose a game'
+                }
+            }
             }
             break;
         default:

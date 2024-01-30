@@ -8,6 +8,7 @@ import Top from "./Top/Top";
 import NewsCards from "./NewsCards/NewsCards";
 import NewsCarrousel from "./NewsCarrousel/NewsCarrousel";
 import CountlessNews from "./CountlessNews/CountlessNews";
+import SendedMessage from "./SendedMessage/SendedMessage";
 
 export {
     CountlessNews,
@@ -19,5 +20,6 @@ export {
     NavBar,
     NewsCards,
     NewsCarrousel,
+    SendedMessage,
     Top
 }

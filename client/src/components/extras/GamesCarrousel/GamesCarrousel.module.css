@@ -6,6 +6,7 @@
         flex-direction: row;
         align-items: center;
         place-content: center;
+        height: 20em;
     }
     .container{
         display: flex;
@@ -95,6 +96,7 @@
         flex-direction: row;
         align-items: center;
         place-content: center;
+        height: 100px;
     }
     .container{
         display: flex;
@@ -190,6 +192,7 @@
         flex-direction: row;
         align-items: center;
         place-content: center;
+        height: 150px;
     }
     .container{
         display: flex;

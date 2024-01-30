@@ -18,6 +18,13 @@ const App= () => {
   const changeLanguageES= ()=>{
     setLanguage('ES')
   }
+  
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "auto", 
+  });
+};
 
   const handleGames = (id)=>{
     if (+id !== games){
@@ -25,6 +32,7 @@ const App= () => {
     }else{
       setGames(0)
     }
+    scrollToTop()
 }
 
   return (
@@ -38,10 +46,10 @@ const App= () => {
       />}
       <Routes>
         <Route path='/'  element={<Home language={language} handleGames={handleGames}  />} />
-        <Route path='/contact'  element={<Contact language={language} />} />
+        <Route path='/contact'  element={<Contact language={language} scrollToTop={scrollToTop} />} />
         <Route path='/games'  element={<Games language={language} handleGames={handleGames} games={games}  />} />
         <Route path='/news'  element={<News language={language} />} />
-        <Route path='/news/:id' element={<NewsDetail language={language} />} />
+        <Route path='/news/:id' element={<NewsDetail language={language} scrollToTop={scrollToTop} />} />
         <Route path='/about'  element={<About language={language} />} />
         <Route path='/*'  element={<Error language={language} /> } />
       </Routes>

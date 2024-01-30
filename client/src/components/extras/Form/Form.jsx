@@ -1,10 +1,10 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Validation } from "./Validation"
 import Style from './Form.module.css'
 
-const Form = ({language, handleMessage})=>{
+const Form = ({language, handleMessage, scrollToTop})=>{
 
-    const [gameRelated, setGameRelated]= useState(false)
+    const [gameRelated, setGameRelated]= useState(true)
     const [disable, setDisable]=useState(true)
     const [selectedGame, setSelectedGame]=useState('')
     const [selectedCategory, setSelectedCategory]=useState('')
@@ -26,7 +26,7 @@ const Form = ({language, handleMessage})=>{
     const handleSelect1= (event)=>{
         const selectedValue=event.target.value
         setSelectedCategory(selectedValue)
-        if (selectedValue !== 'None' && selectedValue!== 'Contacto comercial'){
+        if (selectedValue !== '' && selectedValue!== 'Contacto comercial'){
             setGameRelated(true)
         }else{
             setGameRelated(false)
@@ -46,45 +46,72 @@ const Form = ({language, handleMessage})=>{
             ...inputs,
             [name]: value,
         });
+    
+    }
+    useEffect(()=>{
+        const validateForm= ()=>{
+            const currentErrors= Validation(inputs, language, selectedCategory, selectedGame)
+            setError(currentErrors)
 
-        setError((prevError) => ({
-            ...prevError,
-            [name]: Validation({ ...inputs, [name]: value }, language)[name],
-        }));
+            if(inputs.email && inputs.message && inputs.tittle && !currentErrors.message && !currentErrors.email && !currentErrors.tittle){
+                setDisable(false)
+            }else{
+                setDisable(true)
+            }
+        }
+        validateForm()
+    }, [inputs, language])
 
-        setDisable(!(inputs.email && inputs.message && inputs.tittle));
+    const resetForm = () => {
+        setGameRelated(false);
+        setDisable(true);
+        setSelectedGame('');
+        setSelectedCategory('');
+        setInputs({
+            email: '',
+            tittle: '',
+            message: ''
+        });
+        setError({
+            email: '',
+            tittle: '',
+            message: ''
+        });
     };
 
-    const handleSubmit = (event)=>{
+    const handleSubmit = async (event)=>{
         event.preventDefault();
         try {
-            const finalTitle = selectedGame ? `${selectedCategory} - ${selectedGame}: ${inputs.tittle}` : `${selectedCategory} - ${inputs.tittle}`;
+            const finalTittle = selectedGame ? `${selectedCategory} - ${selectedGame}: ${inputs.tittle}` : `${selectedCategory} - ${inputs.tittle}`;
             setInputs({
                 ...inputs,
-                tittle:finalTitle
+                tittle:finalTittle
             })
-            if(error.email || error.message || error.tittle){
-                if(language === 'ES'){
-                    alert('Tienes algo equivocado')
-                }else{
-                    alert('You have something wrong')
-                }
+            const response = await fetch('https://formspree.io/f/mgegobbj', {method: 'POST', headers:{
+                'Content-Type': 'application/json'
+            },
+            body:JSON.stringify(inputs)
+            })
+            if(response.ok){
+                resetForm()
+                handleMessage()
             }
-            handleMessage()
         } catch (error) {
             console.error('Error en la solicitud', error)
         }
+        setDisable(true)
+        scrollToTop()
     }
 
     return(
         <form onSubmit={handleSubmit} className={Style.form} >
             <label className={Style.labels} htmlFor="Email">Email</label>
-            <input className={Style.inputs} onChange={handleOnChange} type="text" name='email' value={inputs.autor} />
+            <input className={Style.inputs} onChange={handleOnChange} type="text" name='email' value={inputs.email} />
             <p className={Style.errors}>{error.email}</p>
             <div className={Style.selectCont}>
                 <label className={Style.labels} htmlFor="">{language === 'ES' ? 'Categoria':'Category'}</label>
                 <select className={Style.select} name="Categorias" id="CatSelect" onChange={handleSelect1}>
-                        <option value="None"> - - - </option>
+                        <option value=""> - - - </option>
                         <option value="Problemas con un juego">{language === 'ES' ? 'Problemas con un juego' : 'Problems with a game' } </option>
                         <option value="Se encontro un bug">{language === 'ES' ? 'Encontre un bug' : 'I find a bug' }</option>
                         <option value="Contacto comercial">{language === 'ES' ? 'Contacto comercial' : 'Business contact' }</option>

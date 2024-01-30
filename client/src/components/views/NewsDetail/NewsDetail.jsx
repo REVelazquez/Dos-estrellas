@@ -3,13 +3,14 @@ import { noticias } from "../../../data/docs/news"
 import Style from './NewsDetail.module.css'
 
 
-const NewsDetail = ({language})=>{
+const NewsDetail = ({language, scrollToTop})=>{
     const navigate= useNavigate()
     const {id} = useParams()
 
     const selectedNew = noticias.find(noticia => noticia.id === +id)
     const handleButton = ()=>{
         navigate('/news')
+        scrollToTop()
     }
 
     return(

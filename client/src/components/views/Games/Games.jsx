@@ -4,10 +4,16 @@ import { DetailCountless } from "../../extras"
 import Style from './Games.module.css'
 
 const Games= ({language, handleGames, games})=>{
+    const scrollToTop = () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "auto", 
+        });
+      };
 
     return(
         <div className={Style.container}>
-        {games !== 1 && <GameSelect handleGames={handleGames} />}
+        {games !== 1 && <GameSelect handleGames={handleGames}/>}
         {games !== 0 &&
         <div className={Style.separator}></div>
         }

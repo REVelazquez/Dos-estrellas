@@ -1,3 +1,5 @@
+@import url('../../../data/fonts/fonts.css');
+
 .form{
     color:white;
     display: flex;
@@ -27,9 +29,14 @@
     margin-left: 5px;
 }
 .button{
-    width: fit-content;
+    width: 5em;
+    height: 2em;
     margin-bottom: 10px;
     margin-top: 5px;
+    background-color: black;
+    color: white;
+    font-family: 'Alkatra';
+    border-color:orange ;
 }
 
 .psTA{
@@ -46,4 +53,26 @@
     font-size: small;
     margin-bottom: 0px;
     margin-top: 1px;
+}
+
+.button:disabled{
+    background-color: black;
+    border-color: gray;
+    color: gray;
+    border-style: groove;
+    cursor:default;
+}
+
+.button:disabled:hover{
+    background-color: black;
+    border-color: gray;
+    color: gray;
+    border-style: groove;
+    cursor:default;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: orange;
+    border-color: white;
+    color: black;
 }
