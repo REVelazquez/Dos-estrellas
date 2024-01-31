@@ -67,7 +67,7 @@ const GamesCarrousel = ({ language, handleGames }) => {
                 <section className={Style.texts}>
                   <h2 className={Style.tittle}>{language === 'ES' ? 'Genero:' : 'Genre:'}</h2>
                   <h3 className={Style.genre}>{currentElements[currentPost].genre}</h3>
-                  <section>
+                  <section className={Style.buttonSec}>
                     <button className={Style.buttonDetail} onClick={()=>handleButton(currentElements[currentPost].id)} >{language === 'ES' ? 'Detalles' : 'Details'}</button>
                     <a href={currentElements[currentPost].steamPage} target="_blank"  rel="noopener noreferrer"   className={Style.steam}>{<FaSteam/>}</a>
                   </section>

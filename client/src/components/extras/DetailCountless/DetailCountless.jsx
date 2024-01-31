@@ -71,7 +71,7 @@ const DetailCountless = ({language})=>{
                     </ul>
                 </section>
             </section>
-            <h3 className={Style.tittle} >{language ==='ES' ?'Noticias relacionadas' :'Related news'}</h3>
+            <h3 className={Style.tittle} >{language ==='ES' ?'Ultimas noticias relacionadas' :'Last related news'}</h3>
             <CountlessNews language={language} />
         </section>
     )

@@ -4,7 +4,7 @@ import Style from './Form.module.css'
 
 const Form = ({language, handleMessage, scrollToTop})=>{
 
-    const [gameRelated, setGameRelated]= useState(true)
+    const [gameRelated, setGameRelated]= useState(false)
     const [disable, setDisable]=useState(true)
     const [selectedGame, setSelectedGame]=useState('')
     const [selectedCategory, setSelectedCategory]=useState('')

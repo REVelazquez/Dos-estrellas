@@ -36,7 +36,10 @@
         margin-top: 0px;
         color: rgb(248, 248, 115);
     }
-    
+    .buttonSec{
+        display: flex;
+        flex-direction: row;
+    }
     .buttonDetail{
         background: none;
         border-style: none;
@@ -143,6 +146,11 @@
     .buttonDetail:hover{
         cursor: pointer;
     }
+
+    .buttonSec{
+        display: flex;
+        flex-direction: row;
+    }
     
     .steam{
         margin-top: 0px;
@@ -227,6 +235,10 @@
         margin-top: 0px;
         color: rgb(248, 248, 115);
     }
+    .buttonSec{
+        display: flex;
+        flex-direction: row;
+    }
     
     .buttonDetail{
         background: none;
@@ -268,6 +280,105 @@
         border-style: none;
         color: white;
         font-size: small;
+        border-radius: .5em;
+    }
+.pointButton:hover{
+    cursor: pointer;
+    color: #ff4500;
+}
+
+.pointButton:disabled{
+    color: gray;
+    cursor: auto;
+}
+}
+@media (min-width:480px) and (max-width:780px) {
+    .wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        height: 250px;
+    }
+    .container{
+        display: flex;
+        background-color: black;
+        border-radius: 5px;
+        margin: auto;
+    }
+    .image{
+        width: 400px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .texts{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tittle{
+        font-family: 'Alkatra';
+        margin-bottom: 0px;
+        color: orange;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+    .buttonSec{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .genre{
+        font-family: 'Lora';
+        font-size: 20px;
+        margin-top: 0px;
+        color: rgb(248, 248, 115);
+    }
+    
+    .buttonDetail{
+        background: none;
+        border-style: none;
+        color: orangered;
+        font-family: 'Roboto';
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    .buttonDetail:hover{
+        cursor: pointer;
+    }
+    
+    .steam{
+        color: white;
+        font-size: 30px;
+    }
+    
+    .button{
+        background: None;
+        border-style: none;
+        font-size: x-large;
+        margin:.5em;
+        width: 1em;
+        height: 1em;
+        color: white;
+        justify-content: center;
+        border-radius: 2em;
+        text-align: center
+    }
+    
+    .button:hover{
+        color: orangered;
+        cursor: pointer;
+    }
+    
+    .pointButton{
+        background: none;
+        border-style: none;
+        color: white;
+        font-size: x-large;
         border-radius: .5em;
     }
 .pointButton:hover{

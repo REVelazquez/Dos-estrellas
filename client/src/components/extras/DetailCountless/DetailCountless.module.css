@@ -139,6 +139,7 @@
         flex-direction: column;
         align-items: center;
         place-content: center;
+        margin: 10px;
     }
     .banner{
         width: 80%;
@@ -187,6 +188,79 @@
     color: rgb(255, 246, 142);
     font-family: 'Alkatra';
     font-size:23px;
+    font-weight: 100;
+    margin-bottom: 0px;
+    margin-top: 2em;
+}
+.requisites{
+    margin-top: 5px;
+    width: 20em;
+}
+}
+@media (min-width:480px) and (max-width:780px) {
+    
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+        margin: 1em;
+    }
+    .banner{
+        width: 80%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius:40px;
+        border-bottom-right-radius: 40px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerDetails{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .articles{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2em;
+        margin-top: 5px;
+    }
+    .gifs{
+        height: 145px;
+        margin-left: .5em;
+        margin-top: .5em;
+    }
+    .texto{
+        color: whitesmoke;
+        font-family:'Lora';
+        font-size:12px;
+    }
+    .reqContainer{
+        margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3em;
+
+}
+.tittle{
+    color: rgb(255, 246, 142);
+    font-family: 'Alkatra';
+    font-size:28px;
+    font-weight: 200;
+    margin-bottom: 0px;
+    margin-top: 0.5em;
+    
+}
+.tittleReq{
+    color: rgb(255, 246, 142);
+    font-family: 'Alkatra';
+    font-size:26px;
     font-weight: 100;
     margin-bottom: 0px;
     margin-top: 2em;

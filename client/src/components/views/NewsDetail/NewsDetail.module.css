@@ -3,7 +3,7 @@
     .container{
     display: flex;
     flex-direction: column;
-    min-height: 31em;
+    min-height: 100vh;
     align-items: center;
 }
 .button{
@@ -140,6 +140,55 @@
 }
 .text{
     font-size: 16px;
+    font-family: 'Roboto';
+}   
+}
+@media (min-width:480px) and (max-width:780px) {
+    .container{
+    display: flex;
+    flex-direction: column;
+    min-height: 800px;
+    align-items: center;
+
+}
+.button{
+    width: fit-content;
+    height: 2em;
+    margin: 1.5em;
+    background-color: rgba(17, 17, 17);
+    border-style: none;
+    color: antiquewhite;
+    font-size: 20px;
+    z-index: 1000;
+    position: fixed;
+    font-weight: 400;
+    border-radius: 3em;
+    left: 10px;
+    font-family: 'Alkatra';
+}
+.button:hover{
+    background-color: orange;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+
+.section{
+    width: 80%;
+    align-items: center;
+    color: whitesmoke;
+    margin-top: 2em;
+}
+
+.img{
+    height: 10em;
+}
+.tittle{
+    font-size: 30px;
+    font-family: 'Alkatra';
+}
+.text{
+    font-size: 20px;
     font-family: 'Roboto';
 }   
 }

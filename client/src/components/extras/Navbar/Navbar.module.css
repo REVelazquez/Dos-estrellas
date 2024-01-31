@@ -236,3 +236,80 @@
     }
 
 }
+@media (min-width:480px) and (max-width:780px) {
+    .nav{
+        top: 0;
+        position: sticky;
+        z-index: 100; 
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(7, 7, 7);
+        align-items: center;
+        place-content: center;
+    }
+    .img{
+        height: 2.5em;
+    }
+    .img:hover{
+        cursor: pointer;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        margin-left: 5em;
+    }
+    .langButtons{
+        display: flex;
+        align-items: center;
+        place-content: center;
+        margin-left: 0.5em;
+        margin-right: 3em;
+        font-family: 'Lora_variable';
+    }
+    .navButtons{
+        color: whitesmoke;
+        font-weight: 400;
+        margin-right: 5px;
+        width: 5.125em;
+        height: 2em;
+        font-size: medium;
+        background-color: rgba(7, 7, 7);
+        border-color: none;
+        border-style: none;
+        font-family: 'Alkatra';
+    }
+    .navButtons:hover{
+        border-radius: 3em;
+        font-size:medium;
+        background-color: rgba(255, 166, 0);
+        color: black;
+        cursor:pointer;
+    }
+    .languageButtons{
+        color: white;
+        font-weight: 400;
+        width: 2.5em;
+        border-style: none;
+        background-color: rgba(7, 7, 7);
+        font-family: 'Lora_variable';
+        font-size: x-small;
+        font-weight: 700;
+    }
+    .languageButtons:hover{
+        color: black;
+        border-radius: 1em;
+        background-color: orange;
+        cursor: pointer;
+    }
+    .languageButtons:disabled{
+        width: 2.5em;
+        margin: .5em;
+        border-radius: 1em;
+        background-color: rgb(255, 42, 0);
+        color: black;
+        cursor: default;
+    }
+
+}

@@ -2,8 +2,10 @@ import { noticias } from "../../../data/docs/news";
 import Style from "./CountlessNews.module.css"
 import { NavLink } from "react-router-dom";
 const CountlessNews = ({language}) => {
-  const filtratedNews = noticias.filter(noticia => noticia.category === 'Countless Army');
-
+  let filtratedNews = noticias.filter(noticia => noticia.category === 'Countless Army');
+  if(filtratedNews.length >2){
+    filtratedNews=filtratedNews.splice(0,2)
+  }
   return (
     <div className={Style.section}>
       {filtratedNews.map((news) => (

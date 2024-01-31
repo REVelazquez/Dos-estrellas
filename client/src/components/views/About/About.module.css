@@ -190,7 +190,7 @@
 
 .presentation{
     color: white;
-    width: 95%;
+    width: 90%;
     font-size: 15px;
     font-family: 'Lora';
     margin-top: 0px;
@@ -263,6 +263,98 @@
     color: white;
     font-family: 'Roboto';
     font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+}
+@media (min-width:480px) and (max-width:780px){
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        place-content: center;
+        min-height: 800px;
+        margin-bottom: 2em;
+}
+
+.presentation{
+    color: white;
+    width: 85%;
+    font-size: 20px;
+    font-family: 'Lora';
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    width: 20em;
+    margin-right: 10em;
+}
+
+.tittle{
+    color: white;
+    font-family: 'Alkatra';
+    text-decoration: underline;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.containerMember{
+    display:flex;
+    flex-Direction:column; 
+    width:15em;
+}
+
+.memberImg{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 1em;
+    top: 0;
+    margin-top:5px;
+}
+
+.memberName{
+    font-family: 'Alkatra';
+    color: white;
+    font-size: 26px;
+    margin-bottom: 0px;
+    height: 2em;
+}
+
+.memberWork{
+    font-family: 'Lora';
+    color: whitesmoke;
+    font-size: 18px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height:4em ;
+}
+
+.tittleAndText{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.subtittles{
+    color: white;
+    font-size: 22px;
+    font-family: 'Alkatra';
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+
+.text2{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 16px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
