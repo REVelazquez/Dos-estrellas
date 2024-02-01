@@ -1,22 +1,49 @@
-.scrollButton{
-    position: fixed;
-    bottom: 11em;
-    right: 3em;
-    z-index: 1000;
+@media (max-width: 480px) {
+    .scrollButtonSmall {
+        position: fixed;
+        bottom: 5em;
+        right: 1em;
+        z-index: 1000;
+    }
+
+    .scrollToTopSmall {
+        background-color: black;
+        width: fit-content;
+        height: fit-content;
+        color: whitesmoke;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 2em;
+        cursor: pointer;
+        font-size: 10px;
+    }
+
+    .scrollToTopSmall:hover {
+        background-color: blue;
+    }
 }
 
-.scrollToTop{
-    background-color: black;
-    width: fit-content;
-    height: fit-content;
-    color: whitesmoke;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4em;
-    cursor: pointer;
-    font-size: small;
-}
+@media (min-width: 480px) {
+    .scrollButtonLarge {
+        position: fixed;
+        bottom: 11em;
+        right: 3em;
+        z-index: 1000;
+    }
 
-.scrollToTop:hover{
-    background-color: blue;
+    .scrollToTopLarge {
+        background-color: black;
+        width: fit-content;
+        height: fit-content;
+        color: whitesmoke;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4em;
+        cursor: pointer;
+        font-size: small;
+    }
+
+    .scrollToTopLarge:hover {
+        background-color: blue;
+    }
 }

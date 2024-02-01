@@ -7,7 +7,7 @@
     margin-right: 34%;
 }
 .button{
-    margin-top: 1%;
+    margin-top: 2.5%;
     background: none;
     border-color: none;
     border-style: none;
@@ -90,7 +90,7 @@
 @media (min-width:480px) and (max-width:780px) {    
     .section{
         width: 80%;
-        height: 325px;
+        height: fit-content;
         background-color: black;
         margin-left: 34%;
         margin-right: 34%;
@@ -103,9 +103,67 @@
         opacity: 0.6;
     }
     .imgButton{
-        width: 550px;
-        margin-top: 25px;
-        margin-bottom: 5px;
+        width:100%;
+        margin:auto;
+        flex-grow: 1;
+        object-fit: cover;
+        transition: 0.5s ease;
+    }
+    .button:hover{
+        cursor: crosshair;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+
+}
+@media (min-width:780px) and (max-width:1080px) {    
+    .section{
+        width: 80%;
+        height: fit-content;
+        background-color: black;
+        margin-left: 34%;
+        margin-right: 34%;
+    }
+    .button{
+        margin-top: 1%;
+        background: none;
+        border-color: none;
+        border-style: none;
+        opacity: 0.6;
+    }
+    .imgButton{
+        width:750px;
+        margin:auto;
+        flex-grow: 1;
+        object-fit: cover;
+        transition: 0.5s ease;
+    }
+    .button:hover{
+        cursor: crosshair;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+
+}
+@media (min-width:1080px) and (max-width:1400px) {    
+    .section{
+        width: 90%;
+        height: fit-content;
+        background-color: black;
+        margin-left: 34%;
+        margin-right: 34%;
+    }
+    .button{
+        margin-top: 1%;
+        background: none;
+        border-color: none;
+        border-style: none;
+        opacity: 0.6;
+    }
+    .imgButton{
+        width:70em;
+        margin-bottom: 1em;
+        margin-top: 1em;
         flex-grow: 1;
         object-fit: cover;
         transition: 0.5s ease;

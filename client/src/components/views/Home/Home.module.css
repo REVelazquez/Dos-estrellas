@@ -62,4 +62,34 @@
         font-family: 'Alkatra';
     }
 }
+@media (min-width: 780px) and (max-width:1080px) {
+    .container{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        min-height: 100vh;
+    
+    }
+    .tittle{
+        color: white;
+        font-family: 'Alkatra';
+    }
+}
+@media (min-width: 1080px) and (max-width:1400px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        min-height: 100vh;
+    
+    }
+    .tittle{
+        margin-top: 5em;
+        color: white;
+        font-family: 'Alkatra';
+    }
+}
 

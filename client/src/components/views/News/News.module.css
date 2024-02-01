@@ -157,3 +157,81 @@
         margin-right: 4em;
     }
 }
+@media (min-width:780px) and (max-width:1080px) {
+    
+    .container{
+        margin-top: 40px;
+        align-items: center;
+        place-content: center;
+        align-items: center;
+        width: 90%;
+        min-height: 800px;
+    }
+    .filterContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        margin: 0px;
+    }
+    .filterText{
+        color: white;
+        margin-right: 5px;
+        font-size: larger;
+        font-family: 'Alkatra';
+        font-weight: 300;
+    }
+    .select{
+        background-color: rgb(7, 7, 7);
+        color: whitesmoke;
+        font-size: larger;
+        font-family: 'Alkatra';
+    }
+    .newsContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        gap: .5em;
+        align-items: center;
+        place-content: center;
+        margin: auto;
+    }
+}
+@media (min-width:1080px) and (max-width:1400px) {
+    
+    .container{
+        margin-top: 40px;
+        align-items: center;
+        place-content: center;
+        align-items: center;
+        width: 90%;
+        min-height: 800px;
+    }
+    .filterContainer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        place-content: center;
+        margin: 0px;
+    }
+    .filterText{
+        color: white;
+        margin-right: 5px;
+        font-size: large;
+        font-family: 'Alkatra';
+        font-weight: 300;
+    }
+    .select{
+        background-color: rgb(7, 7, 7);
+        color: whitesmoke;
+        font-size: large;
+        font-family: 'Alkatra';
+    }
+    .newsContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        gap: .5em;
+        align-items: center;
+        place-content: center;
+        margin: auto;
+    }
+}

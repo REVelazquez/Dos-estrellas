@@ -236,3 +236,121 @@
     font-weight: lighter;
 }
 }
+@media (min-width:780px) and (max-width:1080px) {
+    
+    .section{
+        width:175px;
+        height:365px;
+        margin-left:2.5em ;
+        border-style:double;
+        border-color:whitesmoke;
+        color:whitesmoke;
+        background-color: black;
+        margin-top: 1em;
+        margin-left: 4em;
+    }
+    .img{
+        width: 100px;
+        size: cover;
+    }
+    
+    .category{
+        color: white;
+        font-size: 12px;
+    }
+    .catBut{
+        color: white;
+        font-size:12px;
+        background-color: black;
+        border-color: none;
+        border-style: none;
+    }
+    .catBut:hover{
+        cursor: pointer;
+    }
+    
+.container{
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+
+.tittle{
+    color:white;
+    margin-top: 0px;
+    font-family: 'Alkatra';
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.text{
+    font-family: 'Lora';
+    font-size: 14px;
+    font-weight:lighter;
+}
+
+.link{
+    color: orangered;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: lighter;
+}
+}
+@media (min-width:1080px) and (max-width:1400px) {
+    
+    .section{
+        width:175px;
+        height:365px;
+        margin-left:2.5em ;
+        border-style:double;
+        border-color:whitesmoke;
+        color:whitesmoke;
+        background-color: black;
+        margin-top: 1em;
+        margin-left: 4em;
+    }
+    .img{
+        width: 100px;
+        size: cover;
+    }
+    
+    .category{
+        color: white;
+        font-size: 12px;
+    }
+    .catBut{
+        color: white;
+        font-size:12px;
+        background-color: black;
+        border-color: none;
+        border-style: none;
+    }
+    .catBut:hover{
+        cursor: pointer;
+    }
+    
+.container{
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+
+.tittle{
+    color:white;
+    margin-top: 0px;
+    font-family: 'Alkatra';
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.text{
+    font-family: 'Lora';
+    font-size: 14px;
+    font-weight:lighter;
+}
+
+.link{
+    color: orangered;
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: lighter;
+}
+}

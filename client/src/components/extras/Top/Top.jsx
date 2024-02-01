@@ -1,42 +1,46 @@
-import { useEffect, useState } from "react"
+import { useState, useEffect } from "react";
 import Style from './Top.module.css'
 import { TiArrowSortedUp } from "react-icons/ti";
 
+const Top = () => {
+  const [isVisible, setIsVisible] = useState(false);
 
-const Top = ()=>{
-    const [isVisible, setIsVisible]= useState(false)
+  const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
 
-    const handleScroll = () => {
-        const scrollTop = window.pageYOffset;
-    
-        if (scrollTop > 300) { // Cambiar 300 por la cantidad de scroll que desees para mostrar el botón
+      if (scrollTop > 300) {
           setIsVisible(true);
-        } else {
+      } else {
           setIsVisible(false);
-        }
-      };
-    
-      // Manejar el evento de scroll
-      useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
+      }
+  };
+
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
           window.removeEventListener('scroll', handleScroll);
-        };
-      }, []);
-    
-      // Ir al inicio de la página
-      const scrollToTop = () => {
-        window.scrollTo({
-          top: 0,
-          behavior: 'smooth' // Animación suave al desplazarse
-        });
       };
+  }, []);
 
-    return(
-        <div className={Style.scrollButton}>
-            {isVisible && <button className={Style.scrollToTop} onClick={scrollToTop}>{<TiArrowSortedUp size={30} />}</button>}
-        </div>
-    )
-}
+  const scrollToTop = () => {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+      });
+  };
 
-export default Top
+  const scrollButtonClass = window.innerWidth < 480 ? Style.scrollButtonSmall : Style.scrollButtonLarge;
+  const scrollToTopClass = window.innerWidth < 480 ? Style.scrollToTopSmall : Style.scrollToTopLarge;
+
+  return (
+      <div className={scrollButtonClass}>
+          {isVisible && (
+              <button className={scrollToTopClass} onClick={scrollToTop}>
+                  {<TiArrowSortedUp size={30} />}
+              </button>
+          )}
+      </div>
+  );
+};
+
+export default Top;

@@ -5,14 +5,13 @@
     .section{
         display: grid;
         grid-template-columns: repeat(2, 225px);
+
     }
     .img{
     height: 5em;
     size: cover;
     margin: .5em;
-}
-
-
+    }
 .container{
     width:12em;
     height:20em;
@@ -58,12 +57,11 @@
     height:3em;
     size: cover;
     margin: .5em;
-}
-
-
-.container{
+    
+    }
+    .container{
     width:8em;
-    height:10em;
+    height:12em;
     margin-Left:0px ;
     margin-right: 10px;
     border-Style:double;
@@ -78,20 +76,20 @@
     color:white;
     margin-top: 0px;
     font-family: 'Alkatra';
-    font-size: small;
+    font-size: 10px;
     font-weight: 200;
 }
 
 .text{
     font-family: 'Lora';
-    font-size: smaller;
+    font-size: 8px;
     font-weight:lighter;
 }
 
 .link{
     color: orangered;
     font-family: 'Roboto';
-    font-size: x-small;
+    font-size: 8px;
     font-weight: lighter;
 }
 }
