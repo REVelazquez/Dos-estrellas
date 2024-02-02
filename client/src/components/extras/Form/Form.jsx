@@ -60,7 +60,7 @@ const Form = ({language, handleMessage, scrollToTop})=>{
             }
         }
         validateForm()
-    }, [inputs, language])
+    }, [inputs, language, selectedCategory, selectedGame])
 
     const resetForm = () => {
         setGameRelated(false);

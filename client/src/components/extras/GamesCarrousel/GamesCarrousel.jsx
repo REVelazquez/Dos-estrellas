@@ -47,7 +47,7 @@ const GamesCarrousel = ({ language, handleGames }) => {
           clearInterval(interval);
           resetTimer(); // Asegúrate de reiniciar el temporizador al limpiar el intervalo.
         };
-      }, [currentElements.length, currentPost]);
+      }, [currentElements.length, currentPost, timeElapsed]);
 
     const handleButton = (id)=>{
         navigate('/games')
