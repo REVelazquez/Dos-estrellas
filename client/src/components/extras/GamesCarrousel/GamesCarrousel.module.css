@@ -6,7 +6,7 @@
         flex-direction: row;
         align-items: center;
         place-content: center;
-        height: 20em;
+        height: 95%;
     }
     .container{
         display: flex;
